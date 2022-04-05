@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>捐款</title>
+    <link rel="stylesheet" href="animal-saver.css">
+    <style>
+        .donate{
+            display: flex;
+        }
+        h3{
+            font-size: 25px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .donate-pic{
+            margin: 30px;
+        }
+        .donate-pic img{
+            width: 100%;
+            border-radius: 15px;
+        }
+        .donate-content p::first-letter{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        form{
+            background-image: linear-gradient(180deg,#00b4d8,#ade8f4,#caf0f8,transparent);
+            border-radius: 15px;
+            margin: 30px;
+        }
+        h4{
+            color: #1e6091;
+            margin: 10px 0px 10px 50px;
+            font-size: 22px;
+        }
+        .func{
+            margin: 10px 100px 0px 
+        }
+        .func p{
+            text-indent: 0px;
+            font-size: 20px;
+        }
+        .func p::first-letter{
+            font-size: 20px;
+            font-weight: normal;
+        }
+        .pay{
+            display: flex;
+        }
+        .pay p{
+            padding-right: 20px;
+        }
+        label{
+            color: #1e6091;
+            letter-spacing: 3px;
+            font-size: 20px;
+        }
+        .form-btn{
+            text-align: center;
+            margin: 30px;
+            padding: 20px;
+        }
+        .form-btn input{
+            width: 120px;
+            height: 40px;
+            color: #b5e48c;
+            background-color: #1a759f;
+            border: 3px solid #52b69a;
+            border-radius: 15px;
+            box-shadow:3px 3px #34a0a4;
+        }
+        .form-btn input:hover{
+            border: 5px solid #d9ed92;
+            box-shadow: 3px 3px #34a0a4;
+            color: #caf0f8;
+            transition: 1s;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-switch">
+    <div class="main-header">
+        <div class="logo">
+            <a href="animal-saver-final.html"><img src="logo3.png" alt="Animal Saver"></a>
+        </div>
+        <label for="menu-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav">
+            <ul class="main-ul">
+                <li class="main-list">
+                    <a href="about-us.html"><img src="_elephant_evernote_logo_icon.png" alt="">關於我們</a>
+                </li>
+                <li class="main-list">
+                    <a href="animal-content.html"><img src="_elephant_evernote_logo_icon.png" alt="">瀕危動物</a>
+                    <input type="checkbox" name="" id="animal-nav">
+                    <label for="animal-nav" class="hb2"></label>
+                    <ul class="animal-ul">
+                        <li class="animal-list"><a href="animal-content-penguim.html">企鵝</a></li>
+                        <li class="animal-list"><a href="animal-content-northbear.html">北極熊</a></li>
+                        <li class="animal-list"><a href="animal-content-rhino.html">白犀牛</a></li>
+                        <li class="animal-list"><a href="animal-content-bearcat.html">小熊貓屬</a></li>
+                        <li class="animal-list"><a href="animal-content-bluewhale.html">藍鯨</a></li>
+                        <li class="animal-list"><a href="animal-content-unknow.html">中華鱟</a></li>
+                    </ul>
+                </li>
+                <li class="main-list chose">
+                    <a href="donateus.html"><img src="6214716_elephant_evernote_logo_icon.png" alt="">捐 款</a>
+                </li>
+                <li class="main-list">
+                    <a href="selection.html"><img src="_elephant_evernote_logo_icon.png" alt="">方案說明</a>
+                </li>
+                <li class="main-list">
+                    <a href="contect-us.html"><img src="_elephant_evernote_logo_icon.png" alt="">聯絡我們</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <div class="container nomargin">
+            <h2>捐款</h2>
+            <div class="row-cols-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 donate">
+                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="donate-pic">
+                        <img src="penguimbw2.jpg" alt="penguim">
+                    </div>
+                    <div class="donate-content">
+                        <h3>因為有你，企鵝不再黑白</h3>
+                        <p>30年前，Animal Saver成立了！
+                        此後的每一步，都為台灣公益環境立下新的起點。
+                        而在助人服務上的創新起點，Animal saver往往是背後那一雙手，這讓諸多服務克服了限制，跨入更寬廣的境地：
+                        作為公益「起點」的聯勸，就像走在一條沒人走過的道路上，必須從零到有，摸索出一條可以行走的路，必須沿路斬除深根於環境的種種障礙，讓後人走得更舒適…。
+                        邀請您，繼續與Animal saver同行，成就更多的無限。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                    <form action="">
+                        <h3>捐款選擇</h3>
+                        <div class="part">
+                            <div class="function">
+                            <h4>單筆捐款</h4>
+                                <div class="func">
+                                    <p>方案A</p>
+                                    <p><input type="radio" name="number" value="3,000">3,000元</p>
+                                    <label for="gifttype">好禮二選一:</label>
+                                    <select name="gifttype" id="">
+                                        <option value="gift">選擇</option>
+                                        <option value="gift">典雅咖啡杯白色</option>
+                                        <option value="gift">典雅咖啡杯薰衣草色</option>
+                                    </select>
+                                </div>
+                                <div class="func">
+                                    <p>方案B</p>
+                                    <p><input type="radio" name="number" value="3,000">6,000元</p>
+                                    <label for="gifttype">好禮二選一:</label>
+                                    <select name="gifttype" id="">
+                                        <option value="gift">選擇</option>
+                                        <option value="gift">虎鯨造型背包黑色</option>
+                                        <option value="gift">虎鯨造型背包綠色</option>
+                                    </select>
+                                </div>
+                                <div class="func">
+                                    <p>方案C</p>
+                                    <p><input type="radio" name="number" value="3,000">15,000元</p>
+                                    <label for="gifttype">好禮二選一:</label>
+                                    <select name="gifttype" id="">
+                                        <option value="gift">選擇</option>
+                                        <option value="gift">潮流行李箱粉色</option>
+                                        <option value="gift">潮流行李箱綠色</option>
+                                    </select>
+                                </div>
+                                <div class="func">
+                                    <p>自由方案</p>
+                                    <p><input type="radio" name="number" value=""><input type="text">元</p>
+                                    <label for="gifttype">好禮六選一:</label>
+                                    <select name="gifttype" id="">
+                                        <option value="gift">選擇</option>
+                                        <option value="gift">典雅咖啡杯白色</option>
+                                        <option value="gift">典雅咖啡杯薰衣草色</option>
+                                        <option value="gift">虎鯨造型背包黑色</option>
+                                        <option value="gift">虎鯨造型背包綠色</option>
+                                        <option value="gift">潮流行李箱粉色</option>
+                                        <option value="gift">潮流行李箱綠色</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="function">
+                            <h4>定期定額</h4>
+                                <div class="func">
+                                    <p><input type="radio" name="number" value="3,000">每月600元</p>
+                                </div>
+                                <div class="func">
+                                    <p><input type="radio" name="number" value="6,000">每月1,200元</p>
+                                </div>
+                                <div class="func">
+                                    <p><input type="radio" name="number" value="15,000">每月5,000元</p>
+                                </div>
+                                <div class="func">
+                                    <p><input type="radio" name="number" value="">每月<input type="text">元</p>
+                                    <label for="gifttype">好禮六選一:</label>
+                                    <select name="gifttype" id="">
+                                        <option value="gift">選擇</option>
+                                        <option value="gift">典雅咖啡杯白色</option>
+                                        <option value="gift">典雅咖啡杯薰衣草色</option>
+                                        <option value="gift">虎鯨造型背包黑色</option>
+                                        <option value="gift">虎鯨造型背包綠色</option>
+                                        <option value="gift">潮流行李箱粉色</option>
+                                        <option value="gift">潮流行李箱綠色</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <h4>捐款方式</h4>
+                            <div class="function">
+                                <div class="func pay">
+                                    <p><input type="radio" name="payment">信用卡</p>
+                                    <p><input type="radio" name="payment">Line Pay</p>
+                                    <p><input type="radio" name="payement">WebATM</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <br>
+                        <hr>
+                        <h3>捐款資料</h3>
+                        <div class="part">
+                            <div class="function">
+                                <div class="func">
+                                    <label for="user name">姓名</label>
+                                    <input type="text" placeholder="請輸入姓名">
+                                </div>
+                                <div class="func pay">
+                                    <p><input type="radio" name="gender">先生</p>
+                                    <p><input type="radio" name="gender">女士</p>
+                                    <p><input type="radio" name="gender"><input type="text" name="gender" placeholder="請填寫"></p>
+                                </div>    
+                                <div class="func">
+                                    <label for="user bir">生日</label>
+                                    <input type="date">
+                                </div>
+                                <div class="func">
+                                    <label for="user number">電話</label>
+                                    <input type="tel" placeholder="請輸入號碼">
+                                </div>
+                                <div class="func">
+                                    <label for="user mail">信箱</label>
+                                    <input type="email" placeholder="請輸入信箱">
+                                </div>
+                                <div class="func">
+                                    <label for="user adress">地址</label>
+                                    <select>
+                                        <option value="city">縣市</option>
+                                        <option value="city">台北市</option>
+                                        <option value="city">新北市</option>
+                                        <option value="city">桃園市</option>
+                                        <option value="city">台中市</option>
+                                        <option value="city">台南市</option>
+                                        <option value="city">高雄市</option>
+                                        <option value="city">基隆市</option>
+                                        <option value="city">新竹市</option>
+                                        <option value="city">新竹縣</option>
+                                        <option value="city">嘉義市</option>
+                                        <option value="city">嘉義縣</option>
+                                        <option value="city">苗栗縣</option>
+                                        <option value="city">彰化縣</option>
+                                        <option value="city">南投縣</option>
+                                        <option value="city">雲林縣</option>
+                                        <option value="city">屏東縣</option>
+                                        <option value="city">宜蘭縣</option>
+                                        <option value="city">花蓮縣</option>
+                                        <option value="city">台東縣</option>
+                                        <option value="city">澎湖縣</option>
+                                        <option value="city">金門縣</option>
+                                        <option value="city">馬祖縣</option>
+                                    </select>
+                                    <select>
+                                        <option value="zone">地區</option>
+                                        <option value="zone">桃園區</option>
+                                        <option value="zone">內壢區</option>
+                                        <option value="zone">中壢區</option>
+                                        <option value="zone">平鎮區</option>
+                                        <option value="zone">埔心區</option>
+                                        <option value="zone">楊梅區</option>
+                                        <option value="zone">新屋區</option>
+                                        <option value="zone">大園區</option>
+                                        <option value="zone">龜山區</option>
+                                         <option value="zone">南崁區</option>
+                                    </select>
+                                    <input type="text" placeholder="街道地址">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-btn">
+                            <input type="submit" value="送出">
+                            <input type="reset">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="color">
+        <div class="container">
+            <div class="footer">
+                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                    <div class="footer-logo">
+                           <a href="animal-saver-final.html"><img src="logo3.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                    <div class="footer-path">
+                        <h3>Animal Saver</h3>
+                        <a href="about-us.html">關於我們</a>
+                        <a href="animal-content.html">瀕危動物</a>
+                        <a href="donateus.html">捐 款</a>
+                        <a href="selection.html">方案說明</a>
+                        <a href="contect-us.html">聯絡我們</a>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl-3 ">
+                    <div class="footer-us-fb">
+                        <h3>關注我們</h3>
+                        <div class="footer-us-fb-pic">
+                        <a href="#"><img src="facebook-icon.png"></a>
+                        <a href="#"><img src="ig-icon.png"></a>
+                        <a href="#"><img src="youtube-icon.png"></a>
+                        <a href="#"><img src="twitter-icon.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                    <div class="footer-btn">
+                        <button>語言選擇</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright">©2022 Animal Saver. All Rights Reserved.
+                <br></p>
+                <p>本網站為緯育TibaMe前端工程師專業技術養成班第75期學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">
+                 [緯育TibaMe]</a>
+                ，後續會由專人協助處理</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

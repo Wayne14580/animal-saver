@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瀕危動物-白犀牛</title>
+    <link rel="stylesheet" href="animal-saver.css">
+    <style>
+        .animals-img img{
+            width: 100%;
+            border-radius: 15px;
+            margin: 20px;
+        }
+        .animals-txt{
+            vertical-align: bottom;
+        }
+        .animals-txt h2{
+            text-align: center;
+            padding: 20px;
+        }
+        .animals-txt p{
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing:5px;
+            color: #184e77;
+            padding: 20px;
+        }
+        .animals-btn{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .animals-btn button{
+            width: 150px;
+            height: 60px;
+            background-color: #1a759f;
+            border: 3px solid #52b69a;
+            border-radius: 15px;
+            box-shadow: 3px 3px #34a0a4;
+            position: absolute;
+            right: 275px;
+            bottom: 0px;
+        }
+        .animals-btn a{
+            font-size: 30px;
+            letter-spacing: 5px;
+            text-decoration: none;
+            color: #b5e48c;
+            padding: 10px;
+            }
+        .animals-btn button:hover{
+            border: 5px solid #d9ed92;
+            box-shadow: 4px 4px #34a0a4;
+            transition: 1s;
+        }
+        .animals-btn a:hover{
+            font-size: 32px;
+            color: #caf0f8;
+            transition: 1s;
+        }
+        .map-for-animal{
+            margin: 30px;
+        }
+        .map-for-animal img{
+            width:100%;
+        }
+        .animals-more-photos{
+            display: flex;
+            margin: 30px;
+        }
+        .animals-more-photos img{
+            width: 100%;
+            border-radius: 15px;
+        }
+        .animals-other{
+            display: flex;
+            justify-content: space-around;
+        }
+        .animals-other button{
+            border-radius: 50px;
+            border: 3px solid #52b69a;
+            box-shadow: 3px 3px #34a0a4;
+            overflow: hidden;
+        }
+        .animals-other button:hover{
+            border-radius: 100%;
+            border:  4px solid #d9ed92;
+            box-shadow: 4px 4px #34a0a4;
+            transition: .5s;
+        }
+        .animals-other img{
+            width: 100%;
+            border-radius: 50px;
+        }
+        .animals-other img:hover{
+            width: 100%;
+            border-radius: 100%;
+            transform: scale(1.2);
+        }
+        .animals-other p{
+            font-size: 20px;
+            font-weight: bolder;
+            text-indent: 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-switch">
+    <div class="main-header">
+        <div class="logo">
+            <a href="animal-saver-final.html"><img src="logo3.png" alt="Animal Saver"></a>
+        </div>
+        <label for="menu-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav">
+            <ul class="main-ul">
+                <li class="main-list">
+                    <a href="about-us.html"><img src="_elephant_evernote_logo_icon.png" alt="">關於我們</a>
+                </li>
+                <li class="main-list chose">
+                    <a href="animal-content.html"><img src="6214716_elephant_evernote_logo_icon.png" alt="">瀕危動物</a>
+                    <input type="checkbox" name="" id="animal-nav">
+                    <label for="animal-nav" class="hb2"></label>
+                    <ul class="animal-ul">
+                        <li class="animal-list"><a href="animal-content-penguim.html">企鵝</a></li>
+                        <li class="animal-list"><a href="animal-content-northbear.html">北極熊</a></li>
+                        <li class="animal-list"><a href="animal-content-rhino.html">白犀牛</a></li>
+                        <li class="animal-list"><a href="animal-content-bearcat.html">小熊貓屬</a></li>
+                        <li class="animal-list"><a href="animal-content-bluewhale.html">藍鯨</a></li>
+                        <li class="animal-list"><a href="animal-content-unknow.html">中華鱟</a></li>
+                    </ul>
+                </li>
+                <li class="main-list">
+                    <a href="donateus.html"><img src="_elephant_evernote_logo_icon.png" alt="">捐 款</a>
+                </li>
+                <li class="main-list">
+                    <a href="selection.html"><img src="_elephant_evernote_logo_icon.png" alt="">方案說明</a>
+                </li>
+                <li class="main-list">
+                    <a href="contect-us.html"><img src="_elephant_evernote_logo_icon.png" alt="">聯絡我們</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <h1>瀕危動物</h1>
+    <section>
+        <div class="container">
+            <div class="row-cols-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 about-us">
+                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="animals-img">
+                        <img src="rhino-con.jpg">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="animals-txt">
+                        <h2>白犀牛</h2>
+                        <p>白犀（學名：Ceratotherium simum）又稱方吻犀，是現存體型最大的犀牛之一，分為北白犀和南白犀兩個亞種，分別產自非洲中部和南部的草原。2018年3月19日，最後一頭已知的雄性北白犀「蘇丹」死亡，目前仍確認存活的北白犀僅剩「納金」（Najin）與「法圖」（Fatu）兩頭雌性，被飼養於肯亞的奧佩傑塔自然保護區內。南白犀現存約1.8萬頭，是數量最多的犀牛。白犀是陸地上體型第四大的動物，僅次於三種大象，與印度犀相當（印度犀更高而白犀更長）。北白犀重1.4–1.6噸，南白犀重1.5–2.4噸。角長可達1.5公尺。白犀並不好鬥，受威脅時能用每小時50多公里的速度飛奔，奔跑時會將重心放在後肢的三趾間，並利用臀部穩住前身。</p> 
+                    </div>
+                    <div class="animals-btn">
+                        <button><a href="donateus.html">捐款</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>分布地圖</h2>
+        <div class="map-for-animal">
+            <img src="mapforredbear.jpg" alt="世界地圖">
+        </div>
+    </section>
+    <section>
+        <h2>照片</h2>
+        <div class="container">
+            <div class="animals-more-photos">
+                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="animals-more-pics">
+                        <a href="#"><img src="francesco-ungaro-1236050.jpg" alt="白犀牛"></a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="animals-more-pics">
+                        <a href="#"><img src="francesco-ungaro-1236050.jpg" alt="白犀牛"></a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="animals-more-pics">
+                        <a href="#"><img src="francesco-ungaro-1236050.jpg" alt="白犀牛"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>其他動物</h2>
+        <div class="container">
+            <div class="animals-other">
+                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                    <div class="animals-other-option">
+                        <button><a href="animal-content-penguim.html"><img src="penguimmap.jpg" alt="企鵝"></a></button>
+                        <p>企鵝</p>
+                    </div>
+                </div>
+                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                    <div class="animals-other-option">
+                        <button><a href="animal-content-northbear.html"><img src="bearmap.jpg" alt="北極熊"></a></button>
+                        <p>北極熊</p>
+                    </div>
+                </div>
+                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                    <div class="animals-other-option">
+                        <button><a href="animal-content-bearcat.html"><img src="bearcatmap.jpg" alt="小熊貓屬"></a></button>
+                        <p>小熊貓屬</p>
+                    </div>
+                </div>
+                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                    <div class="animals-other-option">
+                        <button><a href="animal-content-bluewhale.html"><img src="whalemap.jpg" alt="藍鯨"></a></button>
+                        <p>藍鯨</p>
+                    </div>
+                </div>
+                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                    <div class="animals-other-option">
+                        <button><a href="animal-content-unknow.html"><img src="unknowmap.jpg" alt="中華鱟"></a></button>
+                        <p>中華鱟</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="color">
+        <div class="container">
+            <div class="footer">
+                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                    <div class="footer-logo">
+                           <a href="animal-saver-final.html"><img src="logo3.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                    <div class="footer-path">
+                        <h3>Animal Saver</h3>
+                        <a href="about-us.html">關於我們</a>
+                        <a href="animal-content.html">瀕危動物</a>
+                        <a href="donateus.html">捐 款</a>
+                        <a href="selection.html">方案說明</a>
+                        <a href="contect-us.html">聯絡我們</a>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl-3 ">
+                    <div class="footer-us-fb">
+                            <h3>關注我們</h3>
+                            <div class="footer-us-fb-pic">
+                            <a href="#"><img src="facebook-icon.png"></a>
+                            <a href="#"><img src="ig-icon.png"></a>
+                            <a href="#"><img src="youtube-icon.png"></a>
+                            <a href="#"><img src="twitter-icon.png"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                    <div class="footer-btn">
+                        <button>語言選擇</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright">©2022 Animal Saver. All Rights Reserved.
+                <br></p>
+                <p>本網站為緯育TibaMe前端工程師專業技術養成班第75期學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">
+                 [緯育TibaMe]</a>
+                ，後續會由專人協助處理</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
