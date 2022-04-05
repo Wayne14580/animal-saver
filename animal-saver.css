@@ -86,7 +86,7 @@ section{
 }
 .front-page-pic img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 15px 0 15px 0;
     filter: brightness(0.5);
 }
 .focus-pic{
