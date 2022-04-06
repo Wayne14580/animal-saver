@@ -8,7 +8,7 @@ section{
     position: relative;
 }
 .container{
-    max-width: 100%;
+    width: 100%;
     margin: auto;
     padding-left: 1.25%;
     padding-right:1.25%;
@@ -22,7 +22,7 @@ section{
     margin-right: -15px;
 }
 .main-header{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     background-image: linear-gradient(90deg,transparent,#d9ed92,#99d98c,#34a0a4);
     justify-content: space-between;
@@ -505,7 +505,6 @@ h3{
         opacity: 0;
     }
     #menu-switch:checked ~ .main-header .main-nav{
-        /* display: block; */
         right: -40px;
         opacity: 1;
         transition: right 3s;
@@ -631,12 +630,8 @@ h3{
         display: none;
         position: absolute;
         top: 40px;
-        /* opacity: 0; */
         background-image: linear-gradient(0deg,transparent,#d9ed92,#99d98c);
-        /* transition:opacity 1 0.5s,top 50px 0.5s; */
         z-index: 200;
-        /* left: 15px; */
-        /* left: 0; */
     }
     .animal-ul li{
         color: #1e6091;
@@ -650,7 +645,6 @@ h3{
     }
     .animal-list{
         position: relative;
-        /* display: block; */
     }
     #animal-nav:checked ~ .animal-ul{
         display: block;
