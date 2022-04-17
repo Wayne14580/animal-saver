@@ -7,13 +7,20 @@
     <title>關於我們</title>
     <link rel="stylesheet" href="../animal-saver.css">
     <style>
+        .about-us-title h2{
+            font-size: 30px;
+        }
         .aboutus{
             display: flex;
             flex-wrap: wrap;
         }
+        .about-us-person{
+            margin-top: auto;
+            margin-bottom: auto;
+        }
         .aboutus-pic{
             font-size: 0px;
-            margin: 30px;
+            padding: 2.5%;
         }
         .aboutus-pic img{
             width: 100%;
@@ -23,44 +30,198 @@
             position: relative;
         }
         .aboutus-s p{
-            font-size: 15px;
+            font-size: 10px;
             text-indent: 0px;
             color: aliceblue;
             position: absolute;
-            bottom: 30px;
-            right: 35px;
+            bottom: 20px;
+            right: 25px;
         }
         .aboutus-s p::first-letter{
-            font-size: 15px;
+            font-size: 10px;
             font-weight: normal;
         }
         .aboutus-txt{
-            padding: 10px;
-            margin: 30px ;
+            padding: 0%;
+            /* border: #1a759f 3px solid; */
+        }
+        .aboutus-txt h2{
+        font-size:0px;
+        display: none;
+    }
+        .aboutus-txt p{
+            font-size: 12px;
         }
         .aboutus-txt p::first-letter{
-            font-size: 20px;
+            font-size: 15px;
             font-weight: bold;
+        }
+        .aboutus-a{
+            text-align: center;
+            margin: 3%;
+        }
+        .aboutus-a a{
+            text-decoration: none;
+            font-size: 15px;
+            padding: 5px;
+            text-decoration: none;
+            color: #b5e48c;
+            background-color: #1a759f;
+            border: 3px solid #52b69a;
+            border-radius: 15px;
+            box-shadow:3px 3px #34a0a4;
+        }
+        .aboutus-a a:hover{
+            font-size: 15px;
+            color: #caf0f8;
+            transition: 1s;
+            border: 4px solid #d9ed92;
+            box-shadow:4px 4px #34a0a4;
+        }
+        /* .aboutus-txts p{
+            font-size: 12px;
+        }
+        .aboutus-txt p::first-letter{
+            font-size: 15px;
+            font-weight: bold;
+        } */
+        .about-video-title h2{
+            font-size: 30px;
         }
         .aboutus-video{
             display: flex;
-            margin: 30px;
+            flex-wrap: wrap;
+            /* padding: 2.5%; */
+        }
+        .video{
+            padding: 10px;
+            border-right: #1a759f 1px solid;
+            border-bottom: #1a759f 1px solid;
+            margin: 10px;
+            /* box-shadow: 3px 3px #1a759f; */
+        }
+        .abouts-video-link{
+            /* font-size: 0; */
+        }
+        .aboutus-video-txt{
+            padding: 2.5%;
+            
+        }
+        .aboutus-video-txt h3{
+            text-align: center;
+        }
+        .aboutus-video-txt p{
+           display: none;
         }
         .aboutus-video-txt p::first-letter{
-            font-size: 20px;
+            font-size: 15px;
             font-weight: bold;
         }
         .aboutus-video-link iframe{
             width: 100%;
             aspect-ratio: 560/315;
+            border-radius: 15px;
         }
+        @media screen and (min-width:768px) {
+    .col-md-1{ width: 8.333333%;}
+    .col-md-2{ width: 16.666666%;}
+    .col-md-3{ width: 25%;}
+    .col-md-4{ width: 33.333333%;}
+    .col-md-5{ width: 41.666666%;}
+    .col-md-6{ width: 50%;}
+    .col-md-7{ width: 58.333333%;}
+    .col-md-8{ width: 66.666666%;}
+    .col-md-9{ width: 75%;}
+    .col-md-10{ width: 83.333333%;}
+    .col-md-11{ width: 91.666666%;}
+    .col-md-12{ width: 100%;}
+    .about-us-title h2{
+            font-size: 0px;
+            display: none;
+        }
+    .aboutus-s p{
+            font-size: 15px;
+            bottom: 30px;
+            right: 35px;
+    }
+    .aboutus-s p::first-letter{
+            font-size: 15px;
+            font-weight: normal;
+    }
+    .aboutus-txt h2{
+        font-size:40px;
+        display: block;
+    }.aboutus-txt{
+            padding: 2.5%;
+        }
+
+    .aboutus-txt p{
+        font-size: 16px;
+        }
+    .aboutus-txt p::first-letter{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .aboutus-txts p{
+        font-size: 16px;
+        }
+    .aboutus-txts p::first-letter{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .about-us-a{
+            text-align: center;
+            display: none;
+        }
+    .about-video-title h2{
+            font-size: 40px;
+        }
+    .aboutus-video-txt  p{
+        font-size: 16px;
+        display: inline;
+    }
+    .aboutus-video-txt p::first-letter{
+            font-size: 20px;
+            font-weight: bold;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .col-lg-1{ width: 8.333333%;}
+    .col-lg-2{ width: 16.666666%;}
+    .col-lg-3{ width: 25%;}
+    .col-lg-4{ width: 33.333333%;}
+    .col-lg-5{ width: 41.666666%;}
+    .col-lg-6{ width: 50%;}
+    .col-lg-7{ width: 58.333333%;}
+    .col-lg-8{ width: 66.666666%;}
+    .col-lg-9{ width: 75%;}
+    .col-lg-10{ width: 83.333333%;}
+    .col-lg-11{ width: 91.666666%;}
+    .col-lg-12{ width: 100%;}
+}
+
+@media screen and (min-width:1200px) {
+    .col-xl-1{ width: 8.333333%;}
+    .col-xl-2{ width: 16.666666%;}
+    .col-xl-3{ width: 25%;}
+    .col-xl-4{ width: 33.333333%;}
+    .col-xl-5{ width: 41.666666%;}
+    .col-xl-6{ width: 50%;}
+    .col-xl-7{ width: 58.333333%;}
+    .col-xl-8{ width: 66.666666%;}
+    .col-xl-9{ width: 75%;}
+    .col-xl-10{ width: 83.333333%;}
+    .col-xl-11{ width: 91.666666%;}
+    .col-xl-12{ width: 100%;}
+}
     </style>
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
     <div class="main-header">
         <div class="logo">
-            <a href="../animal-saver- index.html"><img src="../img/logo3.png" alt="Animal Saver"></a>
+            <a href="../animal-saver- index.html"><img src="../img/LOG05.png" alt="Animal Saver"></a>
         </div>
         <label for="menu-switch" class="hb">
             <span></span>
@@ -98,10 +259,12 @@
         </nav>
     </div>
     <section>
-        <div class="container nomargin">
-            <h2>關於我們</h2>
-            <div class="row-cols-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 aboutus">
-                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="about-us-title">
+            <div class="title">
+                <h2>關於我們</h2>
+            </div>
+            <div class="row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 aboutus">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6 about-us-person">
                     <div class="aboutus-pic">
                         <img src="../img/about-us.jpg">
                     </div>
@@ -109,14 +272,17 @@
                         <p>Wayne Foundation創辦人 B.Wayne</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6 about-us-person">
                     <div class="aboutus-txt">
-                        <p>Animal saver是由Wayne Foundation所組成，我們力求有效且縝密的全球倡議行動，守護急劇惡化的環境氣候與靜默無聲的生態。
-                        作為捐款人，你可以透過我們每月的會員電子報，掌握專案的進展並提供反饋。每年第二季出版的組織年報，也讓你清楚了解捐款用途與分配，得知資金投入哪些具體工作，達成哪些環境成果。我們的帳目管理，都由獨立的財務部門負責，每年必須由獨立第三方會計師核實，內部Animal saver是由Wayne Foundation所組成，我們力求有效且縝密的全球倡議行動，守護急劇惡化的環境氣候與靜默無聲的生態。
-                        作為捐款人，你可以透過我們每月的會員電子報，掌握專案的進展並提供反饋。每年第二季出版的組織年報，也讓你清楚了解捐款用途與分配，得知資金投入哪些具體工作，達成哪些環境成果。我們的帳目管理，都由獨立的財務部門負責，每年必須由獨立第三方會計師核實，內部 作為捐款人，你可以透過我們每月的會員電子報，掌握專案的進展並提供反饋。每年第二季出版的組織年報，也讓你清楚了解捐款用途與分配，得知資金投入哪些具體工作，達成哪些環境成果。我們的帳目管理，都由獨立的財務部門負責，每年必須由獨立第三方會計師核實，內部Animal saver是由Wayne Foundation所組成，我們力求有效且縝密的全球倡議行動，守護急劇惡化的環境氣候與靜默無聲的生態。作為捐款人，你可以。</p>
+                        <div class="title">
+                            <h2>關於我們</h2>
+                        </div>
+                        <p>Animal Saver是由Wayne Foundation所組成，我們力求有效且縝密的全球倡議行動，守護急劇惡化的環境氣候與靜默無聲的生態。作為捐款人，你可以透過我們每月的會員電子報，掌握專案的進展並提供反饋。</p>
+                        <p>每年第二季出版的組織年報，也讓你清楚了解捐款用途與分配，得知資金投入哪些具體工作，達成哪些環境成果。我們的帳目管理，都由獨立的財務部門負責，每年必須由獨立第三方會計師核實，內部 作為捐款人，你可以透過我們每月的會員電子報，掌握專案的進展並提供反饋。</p>
+                        <p>每年第二季出版的組織年報，也讓你清楚了解捐款用途與分配，得知資金投入哪些具體工作，達成哪些環境成果。我們的帳目管理，都由獨立的財務部門負責，每年必須由獨立第三方會計師核實，內部Animal Saver是由Wayne Foundation所組成，我們力求有效且縝密的全球倡議行動，守護急劇惡化的環境氣候與靜默無聲的生態。作為捐款人，你可以。</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="aboutus-pic">
                         <img src="../img/icebargu-fin.jpg" alt="氣候暖化融化冰山">   
                     </div>
@@ -127,7 +293,7 @@
                         <p> 以科學為本，我們專業的團隊和實驗室，透過嚴謹的研究，呈現環境危機的事實和證據。並且親身走到環境破壞第一現場，於前線報導實況，推動環境資訊透明和民眾知情權。</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="aboutus-pic">
                         <img src="../img/bear-hungry.png"alt="飢餓的北極熊">
                     </div>
@@ -143,47 +309,59 @@
         </div>
     </section>
     <section>
-        <div class="container">
-            <h2>活動紀錄</h2>
-            <div class="row-cols-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 aboutus-video">
-                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
-                    <div class="aboutus-video-link">
-                        <iframe src="https://www.youtube.com/embed/-aU_92VotLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="aboutus-video-txt">
-                        <p>自 1971 年成立以來，船艦一直是綠色和平的核心標誌。它將綠色和平成員帶到環境危機的第一現場，見證北極融冰的過程、遠洋非法捕魚的實況；它幫助我們深入海底，進行科學考察任務；它也幫助我們直接行動，攔截阻止海上鑽油船等。
-
-                        目前，我們擁有四艘覆蓋全球的船艦，請聽聽來自前線船員的故事。</p>
+        <div class="about-video-title h2">
+            <div class="title">
+                <h2>活動紀錄</h2>
+            </div>
+            <div class="row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 aboutus-video">
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="video">
+                        <div class="aboutus-video-link">
+                            <iframe src="https://www.youtube.com/embed/-aU_92VotLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="aboutus-video-txt">
+                            <h3>海洋紀錄</h3>
+                            <p>自 1971 年成立以來，船艦一直是綠色和平的核心標誌。它將綠色和平成員帶到環境危機的第一現場，見證北極融冰的過程、遠洋非法捕魚的實況；它幫助我們深入海底，進行科學考察任務；它也幫助我們直接行動，攔截阻止海上鑽油船等。
+    
+                            目前，我們擁有四艘覆蓋全球的船艦，請聽聽來自前線船員的故事。</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
-                    <div class="aboutus-video-link">
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class=" video">
+                        <div class="aboutus-video-link">
                         <iframe src="https://www.youtube.com/embed/A_Z-k8XoKRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="aboutus-video-txt">
+                            <h3>海洋廢棄物</h3>
+                            <p>今年7月，由綠色和平組織與荒野保護協會主導，展開了第一次的臺灣本島海岸廢棄物快篩調查，將全臺海岸線以每10公里為單位，總共劃出121個測站，每個測站範圍為100公尺，結果發現，最髒的前五名分別是新北市瑞芳區臺2線、嘉義縣布袋鎮好美寮、臺南市青草崙、雲林縣麥寮鄉六輕，以及彰化縣大城鄉海提和新北市濆水。</p>
+                        </div>
                     </div>
-                    <div class="aboutus-video-txt">
-                        <p>今年7月，由綠色和平組織與荒野保護協會主導，展開了第一次的臺灣本島海岸廢棄物快篩調查，將全臺海岸線以每10公里為單位，總共劃出121個測站，每個測站範圍為100公尺，結果發現，最髒的前五名分別是新北市瑞芳區臺2線、嘉義縣布袋鎮好美寮、臺南市青草崙、雲林縣麥寮鄉六輕，以及彰化縣大城鄉海提和新北市濆水。</p>
-                    </div>
-                </div><div class="col-4 col-md-4 col-lg-4 col-xl-4">
-                    <div class="aboutus-video-link">
-                        <iframe src="https://www.youtube.com/embed/lRrjXftMG14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="aboutus-video-txt">
-                        <p>你愛海，但你可知道臺灣與世界各地的海洋都正經歷難熬的塑膠危機？
-                        一起跟著彩虹勇士號的航程，瞭解臺灣海洋廢棄物現況，透過島嶼上許許多多自發的減塑行動，看見無塑海洋新希望！一起跟著彩虹勇士號的航程，瞭解臺灣海洋廢棄物現況，透過島嶼上許許多多自發的減塑行動，看見無塑海洋新希望！</p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 ">
+                    <div class="video">
+                        <div class="aboutus-video-link">
+                            <iframe src="https://www.youtube.com/embed/lRrjXftMG14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="aboutus-video-txt">
+                            <h3>海洋塑膠熱</h3>
+                            <p>你愛海，但你可知道臺灣與世界各地的海洋都正經歷難熬的塑膠危機？
+                            一起跟著彩虹勇士號的航程，瞭解臺灣海洋廢棄物現況，透過島嶼上許許多多自發的減塑行動，看見無塑海洋新希望！一起跟著彩虹勇士號的航程，瞭解臺灣海洋廢棄物現況，透過島嶼上許許多多自發的減塑行動，看見無塑海洋新希望！</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="color">
-        <div class="container">
-            <div class="footer">
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+        <div class="containerr">
+            <div class="row-12 footer">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="footer-logo">
                            <a href="../animal-saver- index.html"><img src="../img/logo3.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="footer-path">
                         <h3>Animal Saver</h3>
                         <a href="../html/about-us.html">關於我們</a>
@@ -193,18 +371,18 @@
                         <a href="../html/contect-us.html">聯絡我們</a>
                     </div>
                 </div>
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3 ">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 ">
                     <div class="footer-us-fb">
                             <h3>關注我們</h3>
                             <div class="footer-us-fb-pic">
-                            <a href="#"><img src="../icon/facebook-icon.png"></a>
-                            <a href="#"><img src="../icon/ig-icon.png"></a>
-                            <a href="#"><img src="../icon/youtube-icon.png"></a>
-                            <a href="#"><img src="../icon/twitter-icon.png"></a>
+                            <a href="#"><img src="../icon/facebook-color.png"></a>
+                            <a href="#"><img src="../icon/instagram-color.png"></a>
+                            <a href="#"><img src="../icon/youtube-color.png"></a>
+                            <a href="#"><img src="../icon/twitter-color.png"></a>
                             </div>
                     </div>
                 </div>
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="footer-btn">
                         <button>語言選擇</button>
                     </div>

@@ -7,8 +7,13 @@
     <title>捐款</title>
     <link rel="stylesheet" href="../animal-saver.css">
     <style>
+        .donate-title h2{
+            font-size: 30px;
+        }
         .donate{
             display: flex;
+            flex-wrap: wrap;
+            margin: 30px;
         }
         h3{
             font-size: 25px;
@@ -17,7 +22,7 @@
             margin-bottom: 10px;
         }
         .donate-pic{
-            margin: 30px;
+            /* margin: 30px; */
         }
         .donate-pic img{
             width: 100%;
@@ -30,15 +35,16 @@
         form{
             background-image: linear-gradient(180deg,#00b4d8,#ade8f4,#caf0f8,transparent);
             border-radius: 15px;
-            margin: 30px;
+            margin: 0px;
+            padding: 10px;
         }
         h4{
             color: #1e6091;
-            margin: 10px 0px 10px 50px;
+            margin: 10px 0px 10px 0px;
             font-size: 22px;
         }
         .func{
-            margin: 10px 100px 0px 
+            margin: 10px 0px 0px 
         }
         .func p{
             text-indent: 0px;
@@ -50,6 +56,7 @@
         }
         .pay{
             display: flex;
+            flex-wrap: wrap;
         }
         .pay p{
             padding-right: 20px;
@@ -65,8 +72,9 @@
             padding: 20px;
         }
         .form-btn input{
-            width: 120px;
-            height: 40px;
+            width: 100px;
+            height: 30px;
+            margin: 5px;
             color: #b5e48c;
             background-color: #1a759f;
             border: 3px solid #52b69a;
@@ -74,19 +82,79 @@
             box-shadow:3px 3px #34a0a4;
         }
         .form-btn input:hover{
-            border: 5px solid #d9ed92;
-            box-shadow: 3px 3px #34a0a4;
+            border: 4px solid #d9ed92;
+            box-shadow: 4px 4px #34a0a4;
             color: #caf0f8;
             transition: 1s;
-            font-size: 15px;
+            /* font-size: 15px; */
         }
+@media screen and (min-width:768px) {
+    .col-md-1{ width: 8.333333%;}
+    .col-md-2{ width: 16.666666%;}
+    .col-md-3{ width: 25%;}
+    .col-md-4{ width: 33.333333%;}
+    .col-md-5{ width: 41.666666%;}
+    .col-md-6{ width: 50%;}
+    .col-md-7{ width: 58.333333%;}
+    .col-md-8{ width: 66.666666%;}
+    .col-md-9{ width: 75%;}
+    .col-md-10{ width: 83.333333%;}
+    .col-md-11{ width: 91.666666%;}
+    .col-md-12{ width: 100%;}
+    .donate-title h2{
+            font-size: 40px;
+        }
+    form{
+         /* margin: 30px; */
+    }
+    h4{
+        margin: 10px 0px 10px 50px;
+    }
+    .func{
+            margin: 10px 100px 0px 
+    }
+    .form-btn input{
+        width: 120px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .col-lg-1{ width: 8.333333%;}
+    .col-lg-2{ width: 16.666666%;}
+    .col-lg-3{ width: 25%;}
+    .col-lg-4{ width: 33.333333%;}
+    .col-lg-5{ width: 41.666666%;}
+    .col-lg-6{ width: 50%;}
+    .col-lg-7{ width: 58.333333%;}
+    .col-lg-8{ width: 66.666666%;}
+    .col-lg-9{ width: 75%;}
+    .col-lg-10{ width: 83.333333%;}
+    .col-lg-11{ width: 91.666666%;}
+    .col-lg-12{ width: 100%;}
+}
+
+@media screen and (min-width:1200px) {
+    .col-xl-1{ width: 8.333333%;}
+    .col-xl-2{ width: 16.666666%;}
+    .col-xl-3{ width: 25%;}
+    .col-xl-4{ width: 33.333333%;}
+    .col-xl-5{ width: 41.666666%;}
+    .col-xl-6{ width: 50%;}
+    .col-xl-7{ width: 58.333333%;}
+    .col-xl-8{ width: 66.666666%;}
+    .col-xl-9{ width: 75%;}
+    .col-xl-10{ width: 83.333333%;}
+    .col-xl-11{ width: 91.666666%;}
+    .col-xl-12{ width: 100%;}
+}
     </style>
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
     <div class="main-header">
         <div class="logo">
-            <a href="../animal-saver- index.html"><img src="../img/logo3.png" alt="Animal Saver"></a>
+            <a href="../animal-saver- index.html"><img src="../img/LOG05.png" alt="Animal Saver"></a>
         </div>
         <label for="menu-switch" class="hb">
             <span></span>
@@ -124,10 +192,12 @@
         </nav>
     </div>
     <section>
-        <div class="container nomargin">
-            <h2>捐款</h2>
-            <div class="row-cols-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 donate">
-                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="donate-title">
+            <div class="title">
+                <h2>捐款</h2>
+            </div>
+            <div class="donate">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6 ">
                     <div class="donate-pic">
                         <img src="../img/penguimbw2.jpg" alt="penguim">
                     </div>
@@ -141,7 +211,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <form action="">
                         <h3>捐款選擇</h3>
                         <div class="part">
@@ -298,7 +368,6 @@
                         </div>
                         <div class="form-btn">
                             <input type="submit" value="送出">
-                            <input type="reset">
                         </div>
                     </form>
                 </div>
@@ -310,7 +379,7 @@
             <div class="footer">
                 <div class="col-3 col-md-3 col-lg-3 col-xl-3">
                     <div class="footer-logo">
-                           <a href="../animal-saver- index.html"><img src="../img/logo3.png" alt=""></a>
+                           <a href="../animal-saver- index.html"><img src="../img/LOG05.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-3 col-md-3 col-lg-3 col-xl-3">

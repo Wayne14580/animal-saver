@@ -7,32 +7,33 @@
     <title>瀕危動物</title>
     <link rel="stylesheet" href="../animal-saver.css">
     <style>
+        .animal-title h1{
+            font-size: 30px;
+        }
         .animals-spec{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             margin-top: 30px;
         }
-        .animals-spec button{
-            border-radius: 50px;
-            border: 3px solid #52b69a;
-            box-shadow: 3px 3px #34a0a4;
+        .animal-a-spec:hover{
             overflow: hidden;
-            /* box-sizing: border-box; */
-        }
-        .animals-spec button:hover{
-            border-radius: 100%;
             border:  4px solid #d9ed92;
             box-shadow: 4px 4px #34a0a4;
-            transition: .5s;
+            border-radius: 100%;
         }
-        .animals-spec img{
+        .animal-a-spec img{
             width: 100%;
             border-radius: 50px;
             transform: scale(1);
+            border: 3px solid #52b69a;
+            box-shadow: 3px 3px #34a0a4;
+            vertical-align: top;
+            /* overflow: hidden;
+            box-sizing: border-box;
+            transition: .5s; */
         }
-        .animals-spec img:hover{
-            width: 100%;
-            border-radius: 100%;
+        .animal-a-spec img:hover{
             transform: scale(1.2);
         }
         .animals-spec p{
@@ -48,18 +49,41 @@
             float: left;
             width: 50%;
             border-radius: 15px;
-            margin: 20px;
+            /* padding: 20px; */
+            margin:1.6%;
         }
         .animal-spec-content p{
-            margin: 40px;
+            /* margin: 40px; */
+            letter-spacing: 1px;
         }
+@media screen and (min-width:992px) {
+    .col-lg-1{ width: 8.333333%;}
+    .col-lg-2{ width: 16.666666%;}
+    .col-lg-3{ width: 25%;}
+    .col-lg-4{ width: 33.333333%;}
+    .col-lg-5{ width: 41.666666%;}
+    .col-lg-6{ width: 50%;}
+    .col-lg-7{ width: 58.333333%;}
+    .col-lg-8{ width: 66.666666%;}
+    .col-lg-9{ width: 75%;}
+    .col-lg-10{ width: 83.333333%;}
+    .col-lg-11{ width: 91.666666%;}
+    .col-lg-12{ width: 100%;}
+    .animal-title h1{
+            font-size: 50px;
+        }
+    .none{
+        display: block;
+    }
+    
+}
     </style>
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
     <div class="main-header">
         <div class="logo">
-            <a href="../animal-saver- index.html"><img src="../img/logo3.png" alt="Animal Saver"></a>
+            <a href="../animal-saver- index.html"><img src="../img/LOG05.png" alt="Animal Saver"></a>
         </div>
         <label for="menu-switch" class="hb">
             <span></span>
@@ -96,43 +120,69 @@
             </ul>
         </nav>
     </div>
-    <section>
-        <h1>瀕危動物</h1>
+    <section class="animal-title">
+        <div class="title">
+            <h2>瀕危動物</h2>
+        </div>
         <div class="container">
             <div class="animals-spec">
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
                     <div class="animals-spec-option">
-                        <button><a href="../html/animal-content-penguim.html"><img src="../img/penguimmap.jpg" alt="企鵝"></a></button>
+                        <a href="../html/animal-content-penguim.html">
+                            <div class="animal-a-spec">
+                                <img src="../img/penguimmap.jpg" alt="企鵝">
+                            </div>
+                        </a>
                         <p>企鵝</p>
                     </div>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
                     <div class="animals-spec-option">
-                        <button><a href="../html/animal-content-northbear.html"><img src="../img/bearmap.jpg" alt="北極熊"></a></button>
+                       <a href="../html/animal-content-northbear.html">
+                            <div class="animal-a-spec">
+                                <img src="../img/bearmap.jpg" alt="北極熊">
+                            </div>
+                        </a>
                         <p>北極熊</p>
                     </div>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
                     <div class="animals-spec-option">
-                        <button><a href="../html/animal-content-rhino.html"><img src="../img/rhinomap.jpg" alt="白犀牛"></a></button>
+                        <a href="../html/animal-content-rhino.html">
+                            <div class="animal-a-spec">
+                                <img src="../img/rhinomap.jpg" alt="白犀牛">
+                            </div>
+                        </a>
                         <p>白犀牛</p>
                     </div>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
                     <div class="animals-spec-option">
-                        <button><a href="../html/animal-content-bearcat.html"><img src="../img/bearcatmap.jpg" alt="小熊貓屬"></a></button>
+                        <a href="../html/animal-content-bearcat.html">
+                            <div class="animal-a-spec">
+                                <img src="../img/bearcatmap.jpg" alt="小熊貓屬">
+                            </div>
+                        </a>
                         <p>小熊貓屬</p>
                     </div>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
                     <div class="animals-spec-option">
-                        <button><a href="../html/animal-content-bluewhale.html"><img src="../img/whalemap.jpg" alt="藍鯨"></a></button>
+                       <a href="../html/animal-content-bluewhale.html">
+                            <div class="animal-a-spec">
+                                <img src="../img/whalemap.jpg" alt="藍鯨">
+                            </div>
+                        </a>
                         <p>藍鯨</p>
                     </div>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
                     <div class="animals-spec-option">
-                        <button><a href="../html/animal-content-unknow.html"><img src="../img/unknowmap.jpg" alt="中華鱟"></a></button>
+                        <a href="../html/animal-content-unknow.html">
+                            <div class="animal-a-spec">
+                                <img src="../img/unknowmap.jpg" alt="中華鱟">
+                            </div>
+                        </a>
                         <p>中華鱟</p>
                     </div>
                 </div>
@@ -140,18 +190,18 @@
         </div>
     </section>
     <section>
-        <h2>物種保育</h2>
+        <div class="title">
+            <h2>物種保育</h2>
+        </div>
         <div class="animal-spec-content">
         <img src="../img/Hopetoun_falls.jpg" alt="保育" class="float-img">
         <p>於二十世紀中葉，開始出現針對個別物種的保育工作，其中最顯著的是由紐約動物協會所進行的南美洲大型貓科動物保育工作。紐約動物協會從二十世紀初開始，致力於發展及建立特定物種之保育，進行必要的保育研究，以確立最適保育地點，並作為其保育工作之首要任務。Henry Fairfield Osborn Jr.， Carl E. Akeley， Archie Carr 及 Archie Carr III以此保育工作而聞名當代。例如Akeley，他曾帶領探險隊至維龍加山脈觀察野生山地大猩猩，並確信該物種及其區域需優先保育。他也說服比利時的Albert I採取保衛山地大猩猩的行動，並於現在的剛果民主共和國建立阿爾貝特國家公園(後改名為維龍加國家公園)。
-
-        約1970年，在美國的瀕危物種法案及加拿大的受威脅物種法案之引導下，澳洲、瑞典、英國等國制定了生物多樣性行動計劃(SARA)，上百種特定物種的保護計劃亦接踵而至。值得注意的是，聯合國採取了保育重要性突出的文化或自然地點做為人類共同遺產的行動，且該計劃於1972年被聯合國教科文組織大會採用。截至2006年，聯合國教科文組織共列出830個人類共同遺產地點、644個人類共同遺產文化、162個人類共同遺產自然景觀。美國為第一個積極於國內推行生物保育法的國家，並接連批准瀕危物種法案(1966)與國家環境政策法案(1970)，他們投入大量的資金及保護措施，以保育大範圍的棲息地，和研究受威脅物種。美國保育活動的開展及法規的建立，激發了世界各地其他保育活動之發展，以印度為例，亦在1972年通過了野生動物保育法。
-            
-        在1980年，值得注意的發展是城市保育運動的興起。某個成立於英國伯明罕的當地組織，在英國各城市間串聯且迅速發展城市保育運動，甚至擴及海外。此運動雖被視為草根性的群眾運動，但其早期發展主要得益於城市野生動物的學術研究。城市保育運動最初被視為激進份子的保育運動觀點，但卻漸漸與人類活動密不可分，現今已成為保育思想的主流。目前已有大量的研究工作集中在城市保育生物學上，而保育生物學協會創始於1985年。
-            
-        至1992年，世界上大多數國家已承諾遵從生物多樣性公約原則，並依此原則來進行生物多樣性之保育；隨後，許多國家開始在其境內鑑別及保護瀕危物種，並執行保護相關棲息地的生物多樣性之行動計劃。在1990年後期，出現了越來越多的專業部門，如日趨成熟的生態與環境管理協會和生態協會。
-            
-        自2000年以來，景觀規劃保育的概念已崛起，而較少強調單一物種或單一棲息地的聚焦行動。有別於由多數主流保育人士提倡的生態系方法，一些知名物種之保育方式亦備受關注。生態學證實了生物圈的運作方式，以人類、其他物種和自然環境三者之間複雜的交互關係為例，蓬勃發展的人口與相關農業、工業與其伴隨而來之汙染，這些證實了生態系的穩定關係是極易被瓦解擾亂。</p>
+        </p>
+        <p>約1970年，在美國的瀕危物種法案及加拿大的受威脅物種法案之引導下，澳洲、瑞典、英國等國制定了生物多樣性行動計劃(SARA)，上百種特定物種的保護計劃亦接踵而至。值得注意的是，聯合國採取了保育重要性突出的文化或自然地點做為人類共同遺產的行動，且該計劃於1972年被聯合國教科文組織大會採用。截至2006年，聯合國教科文組織共列出830個人類共同遺產地點、644個人類共同遺產文化、162個人類共同遺產自然景觀。美國為第一個積極於國內推行生物保育法的國家，並接連批准瀕危物種法案(1966)與國家環境政策法案(1970)，他們投入大量的資金及保護措施，以保育大範圍的棲息地，和研究受威脅物種。美國保育活動的開展及法規的建立，激發了世界各地其他保育活動之發展，以印度為例，亦在1972年通過了野生動物保育法。</p>
+         <p>在1980年，值得注意的發展是城市保育運動的興起。某個成立於英國伯明罕的當地組織，在英國各城市間串聯且迅速發展城市保育運動，甚至擴及海外。此運動雖被視為草根性的群眾運動，但其早期發展主要得益於城市野生動物的學術研究。城市保育運動最初被視為激進份子的保育運動觀點，但卻漸漸與人類活動密不可分，現今已成為保育思想的主流。目前已有大量的研究工作集中在城市保育生物學上，而保育生物學協會創始於1985年。</p>
+         <p>至1992年，世界上大多數國家已承諾遵從生物多樣性公約原則，並依此原則來進行生物多樣性之保育；隨後，許多國家開始在其境內鑑別及保護瀕危物種，並執行保護相關棲息地的生物多樣性之行動計劃。在1990年後期，出現了越來越多的專業部門，如日趨成熟的生態與環境管理協會和生態協會。
+         </p>
+         <p>自2000年以來，景觀規劃保育的概念已崛起，而較少強調單一物種或單一棲息地的聚焦行動。有別於由多數主流保育人士提倡的生態系方法，一些知名物種之保育方式亦備受關注。生態學證實了生物圈的運作方式，以人類、其他物種和自然環境三者之間複雜的交互關係為例，蓬勃發展的人口與相關農業、工業與其伴隨而來之汙染，這些證實了生態系的穩定關係是極易被瓦解擾亂。</p>
         </div>
     </section>
     <section class="color">

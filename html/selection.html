@@ -7,20 +7,26 @@
     <title>方案說明</title>
     <link rel="stylesheet" href="../animal-saver.css">
     <style>
-        .sleec h1{
-            margin-top: 30px;
+        /* .selec h1{
+            margin-top: 0;
             margin-bottom: 0;
-        }
-        .sel{
-            margin: 30px;
-        }
-        span{
+            font-size: 30px;
+        } */
+        /* span{
             text-align: center;
+        } */
+        .sel{
+           margin: 3%;
+           position: relative;
         }
         .sel h2{
-            margin-top:100px;
+            margin-top:4%;
+            font-size: 25px;
+            letter-spacing: 7px;
+            margin: 0px;
+            background-image:linear-gradient(180deg,#00b4d8,#ade8f4,#caf0f8);
         }
-        h2.nomargin{
+        h2 .nomargin{
             margin-top: 0;
         }
         .sel-function{
@@ -29,66 +35,63 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            margin-top: 30px;
-            padding: 30px;
+            margin-top: 0%;
+            padding: 1%;
         }
         .sel-function-pic img{
             width: 100%;
             border-radius: 60px;
         }
         .sel-function-pic p{
-            font-size: 15px;
+            font-size: 10px;
             text-indent: 0px;
             text-align: center;
         }
         .sel-function-pic p::first-letter{
-            font-size: 15px;
+            font-size: 10px;
             font-weight: normal;
         }
         .sel-function-txt{
-            font-size: 20px;
+            font-size: 15px;
             line-height: 1.5;
             letter-spacing: 0.4em;
-            margin: 10px;
+            margin: 0.83%;
             text-align: center;
+        }
+        .sel-function-txt h3{
+            font-size: 15px;
         }
         .sel-function-txt p::first-letter{
             font-weight: normal;
+            font-size: 15px;
         }
         .sel-function-btn{
             text-align: center;
-        }
-        .sel-function-btn button{
-            position: absolute;
-            right: 45%;
-            bottom: -50px;
-            width: 120px;
-            height: 40px;
-            background-color: #1a759f;
-            border: 3px solid #52b69a;
-            border-radius: 15px;
-            box-shadow:3px 3px #34a0a4;
-        }
-        .sel-function-btn button:hover{
-            border: 3px solid #d9ed92;
-            box-shadow:3px 3px #34a0a4;
+            padding: 2% 0 5% 0;
         }
         .sel-function-btn a{
             font-size: 20px;
             letter-spacing: 6px;
             text-decoration: none;
             color: #b5e48c;
-            padding: 10px;
+            padding:5px;
+            background-color: #1a759f;
+            border: 3px solid #52b69a;
+            border-radius: 15px;
+            box-shadow:3px 3px #34a0a4;
         }
         .sel-function-btn a:hover{
-            font-size: 25px;
+            font-size: 20px;
             color: #caf0f8;
             transition: 1s;
-        }
+            border: 4px solid #d9ed92;
+            box-shadow:4px 4px #34a0a4;
+        }   
         .life{
             display: flex;
+            flex-wrap: wrap;
             position: relative;
-            margin: 30px 30px 60px 30px;
+            margin: 2.5% 2.5% 5% 2.5%;
         }
         .life-pic img{
             width: 100%;
@@ -96,47 +99,130 @@
         }
         .life-pic h3{
             text-align: center;
+            font-size: 15px;
+        }
+        .life-pic p{
+            display: none;
+            padding: 10px;
+            flex-grow: 1;
         }
         .life-pic p::first-letter{
             font-size: 22px;
         }
         .life-btn{
             text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2.5%;
         }
-        .life-btn button{
-            position: absolute;
-            right:35%;
-            bottom: -50px;
-            width: 120px;
-            height: 40px;
+        .life-btn a{
+            font-size: 15px;
+            padding: 5px;
+            text-decoration: none;
+            color: #b5e48c;
             background-color: #1a759f;
             border: 3px solid #52b69a;
             border-radius: 15px;
             box-shadow:3px 3px #34a0a4;
         }
-        .life-btn button:hover{
-            border: 3px solid #d9ed92;
-            box-shadow:3px 3px #34a0a4;
-        }
-        .life-btn a{
-            font-size: 15px;
-            letter-spacing: 6px;
-            text-decoration: none;
-            color: #b5e48c;
-            padding: 10px;
-        }
         .life-btn a:hover{
-            font-size: 17px;
+            font-size: 15px;
             color: #caf0f8;
             transition: 1s;
+            border: 4px solid #d9ed92;
+            box-shadow:4px 4px #34a0a4;
         }
+        @media screen and (min-width:768px) {
+    .col-md-1{ width: 8.333333%;}
+    .col-md-2{ width: 16.666666%;}
+    .col-md-3{ width: 25%;}
+    .col-md-4{ width: 33.333333%;}
+    .col-md-5{ width: 41.666666%;}
+    .col-md-6{ width: 50%;}
+    .col-md-7{ width: 58.333333%;}
+    .col-md-8{ width: 66.666666%;}
+    .col-md-9{ width: 75%;}
+    .col-md-10{ width: 83.333333%;}
+    .col-md-11{ width: 91.666666%;}
+    .col-md-12{ width: 100%;}
+    .selec h1{
+            font-size: 50px;
+        }
+    .sel h2{
+            font-size: 40px;
+            letter-spacing: 10px;
+        }
+    .life-pic p{
+            display: block;
+            padding: 10px;
+        }
+    .sel-function-pic p::first-letter{
+        font-size: 15px;
+    }
+     .sel-function-pic p{
+        font-size: 15px;
+    }
+    .sel-function-txt{
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0.4em;
+        margin: 0.83%;
+        text-align: center;
+    }
+    .sel-function-txt h3{
+            font-size: 20px;
+        }
+    .sel-function-txt p::first-letter{
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .sel-function-btn a{
+            padding: 10px;
+    }
+    .life-btn a{
+        padding: 10px;
+    }
+    .life-pic h3{
+            font-size: 20px;
+        }
+}
+
+@media screen and (min-width:992px) {
+    .col-lg-1{ width: 8.333333%;}
+    .col-lg-2{ width: 16.666666%;}
+    .col-lg-3{ width: 25%;}
+    .col-lg-4{ width: 33.333333%;}
+    .col-lg-5{ width: 41.666666%;}
+    .col-lg-6{ width: 50%;}
+    .col-lg-7{ width: 58.333333%;}
+    .col-lg-8{ width: 66.666666%;}
+    .col-lg-9{ width: 75%;}
+    .col-lg-10{ width: 83.333333%;}
+    .col-lg-11{ width: 91.666666%;}
+    .col-lg-12{ width: 100%;}
+}
+
+@media screen and (min-width:1200px) {
+    .col-xl-1{ width: 8.333333%;}
+    .col-xl-2{ width: 16.666666%;}
+    .col-xl-3{ width: 25%;}
+    .col-xl-4{ width: 33.333333%;}
+    .col-xl-5{ width: 41.666666%;}
+    .col-xl-6{ width: 50%;}
+    .col-xl-7{ width: 58.333333%;}
+    .col-xl-8{ width: 66.666666%;}
+    .col-xl-9{ width: 75%;}
+    .col-xl-10{ width: 83.333333%;}
+    .col-xl-11{ width: 91.666666%;}
+    .col-xl-12{ width: 100%;}
+}
     </style>
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
     <div class="main-header">
         <div class="logo">
-            <a href="../animal-saver- index.html"><img src="../img/logo3.png" alt="Animal Saver"></a>
+            <a href="../animal-saver- index.html"><img src="../img/LOG05.png" alt="Animal Saver"></a>
         </div>
         <label for="menu-switch" class="hb">
             <span></span>
@@ -173,10 +259,14 @@
             </ul>
         </nav>
     </div>
-    <section class="selec">
-        <h1>方案說明</h1>
-        <div class="container sel">
-            <h2 class="nomargin">方案A</h2>
+    <div class="title">
+        <h2>方案說明</h2>
+    </div>
+    <section>
+        <div class="sel">
+            <div class="title">
+                <h2 class="nomargin">方案A</h2>
+            </div>
             <div class="sel-function">    
                 <div class="col-6 col-md-6 col-lg-6 col-xl-6">
                     <div class="sel-function-pic">
@@ -198,12 +288,16 @@
                     <p>2.典雅咖啡杯薰衣草色</p>
                 </div>
                 <div class="sel-function-btn">
-                    <button><a href="../html/donateus.html">捐款</a></button>
+                   <a href="../html/donateus.html">捐款</a>
                 </div>
             </div>
         </div>
-        <div class="container sel">
-            <h2>方案B</h2>
+    </section>
+    <section>
+        <div class="sel">
+            <div class="title">
+                <h2>方案B</h2>
+            </div>
             <div class="sel-function">    
                 <div class="col-6 col-md-6 col-lg-6 col-xl-6">
                     <div class="sel-function-pic">
@@ -225,12 +319,16 @@
                     <p>2.虎鯨造型背包綠色</p>
                 </div>
                 <div class="sel-function-btn">
-                    <button><a href="../html/donateus.html">捐款</a></button>
+                   <a href="../html/donateus.html">捐款</a>
                 </div>
             </div>
         </div>
-        <div class="container sel">
-            <h2>方案C</h2>
+    </section>
+    <section>
+        <div class="sel">
+            <div class="title">
+                <h2>方案C</h2>
+            </div>
             <div class="sel-function">    
                 <div class="col-6 col-md-6 col-lg-6 col-xl-6">
                     <div class="sel-function-pic">
@@ -252,51 +350,56 @@
                     <p>2.潮流行李箱綠色</p>
                 </div>
                 <div class="sel-function-btn">
-                    <button><a href="../html/donateus.html">捐款</a></button>
+                   <a href="../html/donateus.html">捐款</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="sel">
-        <h2>從生活做起</h2> 
-        <div class="container life">   
-            <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+    <section class="selec">
+        <div class="sel">
+            <div class="title">
+                <h2>從生活做起</h2>
+            </div>
+            <div class="life">   
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
                 <div class="life">
                     <div class="life-pic">
                         <img src="../img/fish.jpg">
                         <h3>挑對海鮮，從不同面向保護海洋</h3>
                         <p>部分魚種的環境成本較高，盡量避免購買這類海鮮，也是保護海洋的方法之一。例如黑鮪魚屬於遠洋食物鏈頂端魚種，如今數量急速下降，已影響生態平衡；青衣和紅條屬於可維持珊瑚礁生態健康的魚種，而目前普遍的捕撈方式嚴重破壞珊瑚；雙髻鯊更已名列IUCN瀕危清單，但其實常出現在甜不辣、魚丸等魚漿製品。</p>
+                        <div class="btn">
+                            <a href="https://npost.tw/archives/40998">了解更多</a>
+                        </div>
                      </div>
-                    <div class="life-btn">
-                            <button><a href="https://npost.tw/archives/40998">了解更多</a></button>
-                    </div>
+                    
                 </div>
             </div>
-            <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4">
                 <div class="life">
                     <div class="life-pic">
                         <img src="../img/plastic-bird-f.jpg">
                         <h3>減少塑膠的使用量</h3>
                         <p>臺灣人平均每人每天可產出 2.1 公斤的垃圾，每年使用 180 億個塑膠袋，是海洋「塑殺」的關鍵元兇之一。也因此，上述讓人心痛的畫面，正可說是渺小個人的消費選擇如何打破地域與國界、超越個體日常僅見的寥寥表相，衝擊整體環境與戕害其他生命的最佳範例。然而，事情遠比我們想像得更加連動。</p>
+                        <div class="btn">
+                            <a href="https://npost.tw/archives/40998">了解更多</a>
+                        </div>
                      </div>
-                    <div class="life-btn">
-                            <button><a href="https://npost.tw/archives/40998">了解更多</a></button>
-                    </div>
                 </div>
             </div>
-            <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4">
                 <div class="life">
                     <div class="life-pic">
                         <img src="../img/seaturtle-f.jpg">
                         <h3>不亂丟垃圾，用行動保護動物</h3>
                         <p>部分魚種的環境成本較高，盡量避免購買這類海鮮，也是保護海洋的方法之一。例如黑鮪魚屬於遠洋食物鏈頂端魚種，如今數量急速下降，已影響生態平衡；青衣和紅條屬於可維持珊瑚礁生態健康的魚種，而目前普遍的捕撈方式嚴重破壞珊瑚；雙髻鯊更已名列IUCN瀕危清單，但其實常出現在甜不辣、魚丸等魚漿製品。</p>
+                        <div class="btn">
+                            <a href="https://npost.tw/archives/40998">了解更多</a>
+                        </div>
                      </div>
-                    <div class="life-btn">
-                            <button><a href="https://npost.tw/archives/40998">了解更多</a></button>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <section class="color">
         <div class="container">

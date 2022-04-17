@@ -7,19 +7,24 @@
     <title>聯絡我們</title>
     <link rel="stylesheet" href="../animal-saver.css">
     <style>
+        .contect-title h2{
+            font-size: 25px;
+        }
         .contect-us{
-            display: flex;
-            margin: 30PX;
+            display:flex;
+            flex-wrap: wrap;
+            margin: 1%;
+            gap: 0;
         }
         .contect-us-frame{
             border: 2px solid #ade8f4;
             background-image: linear-gradient(180deg,#00b4d8,#ade8f4,#caf0f8,transparent);
             border-radius: 15px;
-            margin: 20px;
+            margin: 2%;
         }
         .contect-us-pic{
             text-align: center;
-            margin: 30px;
+            margin: 3%;
         }
         .contect-us-pic img{
             width: 20%;
@@ -27,25 +32,81 @@
         .contect-us-txt{
             text-align: center;
         }
+        .contect-us-txt a{
+            text-decoration: none;
+        }
         .contect-us-txt h3{
             margin: 10px;
         }
         .contect-us-txt p{
-            padding: 20px;
-            text-indent: 0px;
+            display: none;
         }
         .contect-us-txt p::first-letter{
             font-size: 15px;
-            font-weight: normal;
-            
+            font-weight: normal;  
         }
+        @media screen and (min-width:768px) {
+    .col-md-1{ width: 8.333333%;}
+    .col-md-2{ width: 16.666666%;}
+    .col-md-3{ width: 25%;}
+    .col-md-4{ width: 33.333333%;}
+    .col-md-5{ width: 41.666666%;}
+    .col-md-6{ width: 50%;}
+    .col-md-7{ width: 58.333333%;}
+    .col-md-8{ width: 66.666666%;}
+    .col-md-9{ width: 75%;}
+    .col-md-10{ width: 83.333333%;}
+    .col-md-11{ width: 91.666666%;}
+    .col-md-12{ width: 100%;}
+    .contect-title h2{
+            font-size: 40px;
+    }
+    .contect-us-pic{
+        margin: 30px;
+    }
+    .contect-us-txt p{
+        display: block;
+        padding: 20px;
+        text-indent: 0px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .col-lg-1{ width: 8.333333%;}
+    .col-lg-2{ width: 16.666666%;}
+    .col-lg-3{ width: 25%;}
+    .col-lg-4{ width: 33.333333%;}
+    .col-lg-5{ width: 41.666666%;}
+    .col-lg-6{ width: 50%;}
+    .col-lg-7{ width: 58.333333%;}
+    .col-lg-8{ width: 66.666666%;}
+    .col-lg-9{ width: 75%;}
+    .col-lg-10{ width: 83.333333%;}
+    .col-lg-11{ width: 91.666666%;}
+    .col-lg-12{ width: 100%;}
+}
+
+@media screen and (min-width:1200px) {
+    .col-xl-1{ width: 8.333333%;}
+    .col-xl-2{ width: 16.666666%;}
+    .col-xl-3{ width: 25%;}
+    .col-xl-4{ width: 33.333333%;}
+    .col-xl-5{ width: 41.666666%;}
+    .col-xl-6{ width: 50%;}
+    .col-xl-7{ width: 58.333333%;}
+    .col-xl-8{ width: 66.666666%;}
+    .col-xl-9{ width: 75%;}
+    .col-xl-10{ width: 83.333333%;}
+    .col-xl-11{ width: 91.666666%;}
+    .col-xl-12{ width: 100%;}
+}
     </style>
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
     <div class="main-header">
         <div class="logo">
-            <a href="../animal-saver- index.html"><img src="../img/logo3.png" alt="Animal Saver"></a>
+            <a href="../animal-saver- index.html"><img src="../img/LOG05.png" alt="Animal Saver"></a>
         </div>
         <label for="menu-switch" class="hb">
             <span></span>
@@ -83,36 +144,44 @@
         </nav>
     </div>
     <section>
-        <div class="container">
-            <h2>聯絡我們</h2>
-            <div class="row-cols-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 contect-us">
-                <div class="col-4 col-md-4 col-lg-4 col-xl-4 contect-us-frame">
-                    <div class="contect-us-pic">
-                        <a href="#"><img src="../icon/mailcolor-final.png" alt=""></a>
-                    </div>
-                    <div class="contect-us-txt">
-                        <h3>電子信箱</h3>
-                        <p>請將您的寶貴意見以填寫表單方式送出<br>我們將於工作日由專人以郵件回覆您的問題</p>
-                    </div>
-                </div>
-                <div class="col-4 col-md-4 col-lg-4 col-xl-4 contect-us-frame">
-                    <div class="contect-us-pic">
-                        <a href="#"><img src="../icon/severice.png" alt=""></a>
-                    </div>
-                    <div class="contect-us-txt">
-                        <h3>數位客服</h3>
-                        <p>提供更加值且即時的服務，服務範圍包括營運相關問題諮詢及個人化服務申請與查詢</p>
+        <div class="contect-title">
+            <div class="title">
+                <h2>聯絡我們</h2>
+            </div>
+            <div class="contect-us">
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="contect-us-frame">
+                        <div class="contect-us-pic">
+                            <a href="#"><img src="../icon/mailcolor-final.png" alt=""></a>
+                        </div>
+                        <div class="contect-us-txt">
+                            <a href="#"><h3>電子信箱</h3></a>
+                            <p>請將您的寶貴意見以填寫表單方式送出<br>我們將於工作日由專人以郵件回覆您的問題</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-4 col-lg-4 col-xl-4 contect-us-frame">
-                    <div class="contect-us-pic">
-                        <a href="#"><img src="../icon/phone.png" alt=""></a>
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="contect-us-frame">
+                        <div class="contect-us-pic">
+                            <a href="#"><img src="../icon/severice.png" alt=""></a>
+                        </div>
+                        <div class="contect-us-txt">
+                            <a href="#"><h3>數位客服</h3></a>
+                            <p>提供更加值且即時的服務，服務範圍包括營運相關問題諮詢及個人化服務申請與查詢</p>
+                        </div>
                     </div>
-                    <div class="contect-us-txt">
-                        <h3>客服專線</h3>
-                        <p>4066-3000</p>
-                        <p>服務時間: 06:00~24:00</p>
-                        <p> 以上皆為付費電話，依一般市話及行動電話費率標準計費</p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="contect-us-frame">
+                        <div class="contect-us-pic">
+                            <a href="#"><img src="../icon/phone.png" alt=""></a>
+                        </div>
+                        <div class="contect-us-txt">
+                            <a href="#"><h3>客服專線</h3></a>
+                            <p>4066-3000</p>
+                            <p>服務時間: 06:00~24:00</p>
+                            <p> 以上皆為付費電話，依一般市話及行動電話費率標準計費</p>
+                        </div>
                     </div>
                 </div>
             </div>

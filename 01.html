@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="selection-pic">
+        <img id="large" src="img/cafe-cup-f.jpg">
+        <p>典雅咖啡杯</p>
+    </div>
+    <div class="small"> 
+        <img src="img/cafe-cup-f.jpg" >
+        <img src="img/cafe-cup-f-violet.jpg" >
+    </div>
+    <script>
+        function showLarge(e){
+          document.getElementById('large').src = e.target.src;
+        }
+        
+        function init(){
+            let imgs = document.querySelectorAll('.small img');
+            for(let i=0;i<imgs.length; i++){
+                imgs[i].onmouseover = showLarge ;
+            }
+        }
+        
+        window.addEventListener("load", init, false);
+        </script>
+</body>
+</html>
