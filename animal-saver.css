@@ -52,7 +52,7 @@ section{
     text-decoration: none;
     color: #184e77;
     letter-spacing: 2px;
-    padding: 10px;
+    padding: 0 10px;
 }
 .main-ul{
     justify-content: space-around;
@@ -61,8 +61,15 @@ section{
     /* margin-right: 10px; */
     position: relative;
 }
-.main-list:hover{
-    border-bottom: #ade8f4 5px dashed ;
+.main-list:hover::after{
+    content: "";
+    width: 80px;
+    height: 5px; 
+    background-color: #ade8f4;
+    position: absolute;
+    bottom: -10%;
+    left: 20%;
+    border-bottom: #ade8f4 0px dashed ;
     /* background-image: linear-gradient(180deg,#00b4d8,#ade8f4,#caf0f8);
     border-radius: 15px; */
 }
@@ -362,8 +369,12 @@ h3{
     transition: left,2s;
     /* top: 10%;
     right: 30%; */
-    min-width: 300px;
+    min-width: 100px;
     /* display: none; */
+    font-size: 0;
+}
+.animal-content p::first-letter{
+    font-size: 0;
 }
 /* .content-btn{
     text-align: center;  
@@ -417,18 +428,18 @@ h3{
     font-weight: normal;
 }
 .small img{
-    width: 5%;
-    height: 5%;
+    width: 40px;
+    /* height: 40px; */
     padding: 2px;
 }
 .small-m img{
-    width: 5%;
-    height: 5%;
+    width:  40px;
+    /* height:  40px; */
     padding: 2px;
 }
 .small-b img{
-    width: 5%;
-    height: 5%;
+    width: 40px;
+    /* height: 40px; */
     padding: 2px;
 }
 .selection-content{
@@ -545,10 +556,17 @@ h3{
     background-image: linear-gradient(90deg,#d9ed92,#99d98c,#34a0a4);
     margin: 0;
 }
-.chose{
-    border-bottom: #ade8f4 5px dashed;
-    /* background-image: linear-gradient(180deg,#00b4d8,#ade8f4,#caf0f8); */
-    /* border-radius: 15px; */
+.chose::after{
+    content: "";
+    width: 80px;
+    height: 5px; 
+    background-color: #ade8f4;
+    position: absolute;
+    bottom: -10%;
+    left: 20%;
+    border-bottom: #ade8f4 0px dashed ;
+    /* background-image: linear-gradient(180deg,#00b4d8,#ade8f4,#caf0f8);
+    border-radius: 15px; */
 }
 .chose a{
     color: #1a759f;
@@ -781,7 +799,24 @@ h3{
         /* padding: 20px; */
     }
     .animal-content{
+        padding: 10px;
+        font-size: 15px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        border: 2px solid #ade8f4;
+        border-radius: 15px;
+        background-image: linear-gradient(180deg,#00b4d8,#ade8f4,#caf0f8);
+        position: absolute;
+        top: 0%;
+        left: -100%;
+        transition: left,2s;
+        /* top: 10%;
+        right: 30%; */
+        min-width: 300px;
         /* display: none; */
+    }
+    .animal-content p::first-letter{
+        font-size:18px;
     }
     .footer-path{
         display: block;

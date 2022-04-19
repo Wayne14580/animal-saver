@@ -66,21 +66,72 @@
             box-shadow: 4px 4px #34a0a4;
             transition: 1s;
         }
+        .mapup{
+            position: relative;
+        }
         .map-for-animal{
             font-size: 0;
             /* margin: 30px; */
         }
         .map-for-animal img{
             width:100%;
+            vertical-align: bottom;
+        }
+        .map-for-live{
+            position: absolute;
+            top: 0;
+        }
+        .map-for-live img{
+            width: 100%;
+            vertical-align: bottom;
+            opacity: 0.8;
+        }
+        .animal-more{
+            position: relative;
+            width: 1220px;
+            height: 420px;
+            margin: auto;
+            overflow: hidden;
         }
         .animals-more-photos{
-            display: flex;
-            flex-wrap: wrap;
-            /* margin: 30px; */
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            width: 5000px;
+            transition: left 1s;
         }
         .animals-more-photos img{
             width: 100%;
             border-radius: 15px;
+        }
+        .animals-more-pics{
+            margin: 5px;
+            width: 600px;
+            height: 400px;
+            text-align: center;
+            float: left;
+        }
+        .slider-btn{
+            text-align: center;
+            padding: 10px;
+        }
+        #btnLeft{
+            background-color: #1a759f;
+            padding: 10px;
+            border-radius: 50px 0 0 50px ;
+            color: #b5e48c;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+        }
+        #btnRight{
+            background-color: #1a759f;
+            padding: 10px;
+            border-radius: 0 50px 50px 0;
+            color: #b5e48c;
+            position: absolute;
+            top: 50%;
+            right: 5%;
         }
         .animals-other{
             display: flex;
@@ -98,7 +149,6 @@
             border-radius: 50px;
             transform: scale(1); 
             vertical-align: bottom;
-            
             border: 3px solid #52b69a ;
             box-shadow: 3px 3px #34a0a4;
         }
@@ -118,7 +168,7 @@
     <input type="checkbox" name="" id="menu-switch">
     <div class="main-header">
         <div class="logo">
-            <a href="../animal-saver- index.html"><img src="../img/LOG05.png" alt="Animal Saver"></a>
+            <a href="../animal-saver-index.html"><img src="../img/LOG05.png" alt="Animal Saver"></a>
         </div>
         <label for="menu-switch" class="hb">
             <span></span>
@@ -128,11 +178,15 @@
         <nav class="main-nav">
             <ul class="main-ul">
                 <li class="main-list">
-                    <a href="../html/about-us.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">關於我們</a>
+                    <a href="../html/about-us.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        關於我們</a>
                 </li>
                 <li class="main-list chose">
-                    <a href="../html/animal-content.html"><img src="../icon/6214716_elephant_evernote_logo_icon.png" alt="">瀕危動物</a>
-                    <input type="checkbox" name="" id="animal-nav">
+                    <a href="../html/animal-content.html">
+                        <!-- <img src="../icon/6214716_elephant_evernote_logo_icon.png" alt=""> -->
+                        瀕危動物</a>
+                    <!-- <input type="checkbox" name="" id="animal-nav">
                     <label for="animal-nav" class="hb2"></label>
                     <ul class="animal-ul">
                         <li class="animal-list"><a href="../html/animal-content-penguim.html">企鵝</a></li>
@@ -141,16 +195,22 @@
                         <li class="animal-list"><a href="../html/animal-content-bearcat.html">小熊貓屬</a></li>
                         <li class="animal-list"><a href="../html/animal-content-bluewhale.html">藍鯨</a></li>
                         <li class="animal-list"><a href="../html/animal-content-unknow.html">中華鱟</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="main-list">
-                    <a href="../html/donateus.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">捐 款</a>
+                    <a href="../html/donateus.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        捐 款</a>
                 </li>
                 <li class="main-list">
-                    <a href="../html/selection.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">方案說明</a>
+                    <a href="../html/selection.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        方案說明</a>
                 </li>
                 <li class="main-list">
-                    <a href="../html/contect-us.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">聯絡我們</a>
+                    <a href="../html/contect-us.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        聯絡我們</a>
                 </li>
             </ul>
         </nav>
@@ -186,33 +246,53 @@
         <div class="title">
             <h2>分布地圖</h2>
         </div>
-        <div class="map-for-animal">
-            <img src="../img/mapforredbear.jpg" alt="世界地圖">
+        <div class="mapup">
+            <div class="map-for-animal">
+                <img src="../img/world-map-for-index.jpg" alt="世界地圖">
+            </div>
+            <div class="map-for-live">
+                <img src="../img/penguin-live-map.png">
+            </div>
         </div>
     </section>
     <section>
         <div class="title">
             <h2>照片</h2>
         </div>
-        <div class="container">
+        <div class="animal-more">
             <div class="animals-more-photos">
-                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="animals-more-pics">
-                        <a href="#"><img src="../img/bluewhale2.jpg" alt="藍鯨"></a>
-                    </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic00.jpg">
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="animals-more-pics">
-                        <a href="#"><img src="../img/bluewhale2.jpg" alt="藍鯨"></a>
-                    </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic01.jpg">
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="animals-more-pics">
-                        <a href="#"><img src="../img/bluewhale2.jpg" alt="藍鯨"></a>
-                    </div>
+                <div class="animals-more-pics">
+                        <img src="../img/penguin-pic02.jpg">
+                </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic03.jpg">
+                </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic00.jpg">
+                </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic01.jpg">
+                </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic02.jpg">
+                </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic03.jpg">
                 </div>
             </div>
         </div>
+        <div id="shiftPanel" class="slider-btn">
+            <input type="button" id="btnLeft" value="<<" disabled>
+            <input type="button" id="btnRight" value=">>">
+        </div>
+        <script src="../javascript/slide.js">
+        </script>
     </section>
     <section>
         <div class="title">
@@ -273,14 +353,14 @@
         </div>
     </section>
     <section class="color">
-        <div class="container">
-            <div class="footer">
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+        <div class="containerr">
+            <div class="row-12 footer">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="footer-logo">
-                           <a href="../animal-saver- index.html"><img src="../img/logo3.png" alt=""></a>
+                           <a href="../animal-saver-index.html"><img src="../img/logo3.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="footer-path">
                         <h3>Animal Saver</h3>
                         <a href="../html/about-us.html">關於我們</a>
@@ -290,18 +370,18 @@
                         <a href="../html/contect-us.html">聯絡我們</a>
                     </div>
                 </div>
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3 ">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 ">
                     <div class="footer-us-fb">
                             <h3>關注我們</h3>
                             <div class="footer-us-fb-pic">
-                            <a href="#"><img src="../icon/facebook-icon.png"></a>
-                            <a href="#"><img src="../icon/ig-icon.png"></a>
-                            <a href="#"><img src="../icon/youtube-icon.png"></a>
-                            <a href="#"><img src="../icon/twitter-icon.png"></a>
+                            <a href="#"><img src="../icon/facebook-color.png"></a>
+                            <a href="#"><img src="../icon/instagram-color.png"></a>
+                            <a href="#"><img src="../icon/youtube-color.png"></a>
+                            <a href="#"><img src="../icon/twitter-color.png"></a>
                             </div>
                     </div>
                 </div>
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="footer-btn">
                         <button>語言選擇</button>
                     </div>
