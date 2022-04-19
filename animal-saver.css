@@ -29,11 +29,11 @@ section{
     background-image: linear-gradient(90deg,#d9ed92,#99d98c,#34a0a4);
     justify-content: space-between;
     padding:0.83% ;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 20;
 }
 .logo{
-
-    
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -573,41 +573,51 @@ h3{
 .col-10{ width: 83.333333%;}
 .col-11{ width: 91.666666%;}
 .col-12{ width: 100%;}
-
+    /* 隱藏checkbox */
     #menu-switch{
-        position: absolute;
+        position: fixed;
+        top: 0;
         z-index: -1;
         opacity: 0;
     }
+    /* list被check後展開 */
     #menu-switch:checked ~ .main-header .main-nav{
-        right: -40px;
-        opacity: 1;
-        transition: right 3s;
+        left: 0px;
+        /* position: fixed; */
+        /* opacity: 1; */
+        transition: left 3s;
     }
+    /* 漢堡Span1 */
     #menu-switch:checked ~ .main-header .hb span:first-child{
         top: 19px;
         transition: top 1s,transform 1s;
         transform: rotate(-180deg);
     }
+    /* 漢堡Span2 */
     #menu-switch:checked ~ .main-header .hb span:nth-child(2){
         display: none;
     }
+    /* 漢堡Span3 */
     #menu-switch:checked ~ .main-header .hb span:last-child{
         bottom: 19px;
         transition:bottom 1s,transform 1s;
         transform: rotate(180deg);
     }
     .main-nav{
-        background-image: linear-gradient(270deg,transparent,#d9ed92,#99d98c,#34a0a4);
+        background-image: linear-gradient(270deg,#d9ed92,#99d98c,#34a0a4);
         position: absolute;
         top: 100%;
-        left: 50%;
-        opacity: 0;
-        transition: opacity .5s, right 0 .5s;
+        left: -100%;
+        /* opacity: 0; */
+        /* transition: opacity .5s, right 0 .5s; */
         z-index: 20;
+        width: 100%;
+        height: 100vh;
     }
     .main-ul li{
-        display: block;
+        text-align: center;
+        padding: 10px;
+        /* display: block; */
     }
     .hb{
         width: 40px;
@@ -671,6 +681,8 @@ h3{
         top: auto;
         left:auto;
         opacity: 1;
+        width: auto;
+        height:auto;
     }  
     .main-ul{
         display: flex;

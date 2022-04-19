@@ -176,6 +176,14 @@
                         let inMap =document.getElementById("inmap");
                         let animalText = document.getElementById("animaltext");
 
+                        function showConect(){
+                            if(animalBox.style.width<"768px"){
+                                animalBox.style.display="none";
+                            }else if(animalBox.style.width>="768px"){
+                                animalBox.style.display="block";
+                            }
+                        }
+
                         function  showBox(){
                            if(showMap.style.display="none"){
                             showMap.style.display="block";
@@ -188,10 +196,11 @@
                             redCat.style.border="3px solid #34a0a4";
                             whale.style.border="3px solid #34a0a4";
                             limulidae.style.border="3px solid #34a0a4";
-                        //    animalBox.style.display="block";
                             inMap.src="img/penguin-live-map.png";
                             animalText.innerText="主要生活在南半球，目前已知全世界的企鵝共有19種，另有兩種已滅絕。多數分布在南極地區，而其中環企鵝屬的漢波德企鵝、麥哲倫企鵝與黑腳企鵝分布在緯度較低的溫帶地區，至於加拉帕戈斯企鵝的分布則更接近赤道；完全生活在極地的只有皇帝企鵝及阿德利企鵝兩種。";
-                        }else if(showMap.style.display="block"){
+                            function showConect(){}
+                        }
+                            else if(showMap.style.display="block"){
                             showMap.style.display="none";
                             animalBox.style.display="none";
                             inMap.src="";
