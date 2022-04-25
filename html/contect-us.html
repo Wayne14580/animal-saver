@@ -7,6 +7,12 @@
     <title>聯絡我們</title>
     <link rel="stylesheet" href="../animal-saver.css">
     <style>
+        body,html{
+            scroll-behavior: smooth;
+        }
+        section {
+         margin: 0;
+        }
         .contect-title h2{
             font-size: 25px;
         }
@@ -32,8 +38,9 @@
         .contect-us-txt{
             text-align: center;
         }
-        .contect-us-txt a{
+        .contect-us-frame>a{
             text-decoration: none;
+            transition: 0.3s;
         }
         .contect-us-txt h3{
             margin: 10px;
@@ -44,6 +51,33 @@
         .contect-us-txt p::first-letter{
             font-size: 15px;
             font-weight: normal;  
+        }
+        #mail-text{
+        display: none;
+        text-align: center;
+        box-sizing: border-box;
+        }
+        #text-area{
+        display: none;
+        text-align: center;
+        box-sizing: border-box;
+        }
+        .form-btn{
+            text-align: center;
+            /* margin: 30px; */
+            padding: 1%;
+            color: #b5e48c;
+            background-color: #1a759f;
+            border: 3px solid #52b69a;
+            border-radius: 15px;
+            box-shadow:3px 3px #34a0a4;
+        }
+        .form-btn:hover{
+            border: 4px solid #d9ed92;
+            box-shadow: 4px 4px #34a0a4;
+            color: #caf0f8;
+            transition: 1s;
+            /* font-size: 15px; */
         }
         @media screen and (min-width:768px) {
     .col-md-1{ width: 8.333333%;}
@@ -59,7 +93,7 @@
     .col-md-11{ width: 91.666666%;}
     .col-md-12{ width: 100%;}
     .contect-title h2{
-            font-size: 40px;
+        font-size: 40px;
     }
     .contect-us-pic{
         margin: 30px;
@@ -116,10 +150,14 @@
         <nav class="main-nav">
             <ul class="main-ul">
                 <li class="main-list">
-                    <a href="../html/about-us.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">關於我們</a>
+                    <a href="../html/about-us.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        關於我們</a>
                 </li>
                 <li class="main-list">
-                    <a href="../html/animal-content.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">瀕危動物</a>
+                    <a href="../html/animal-content.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        瀕危動物</a>
                     <!-- <input type="checkbox" name="" id="animal-nav">
                     <label for="animal-nav" class="hb2"></label>
                     <ul class="animal-ul">
@@ -132,13 +170,19 @@
                     </ul> -->
                 </li>
                 <li class="main-list">
-                    <a href="../html/donateus.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">捐 款</a>
+                    <a href="../html/donateus.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        捐 款</a>
                 </li>
                 <li class="main-list">
-                    <a href="../html/selection.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">方案說明</a>
+                    <a href="../html/selection.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        方案說明</a>
                 </li>
                 <li class="main-list chose">
-                    <a href="../html/contect-us.html"><img src="../icon/6214716_elephant_evernote_logo_icon.png" alt="">聯絡我們</a>
+                    <a href="../html/contect-us.html">
+                        <!-- <img src="../icon/6214716_elephant_evernote_logo_icon.png" alt=""> -->
+                        聯絡我們</a>
                 </li>
             </ul>
         </nav>
@@ -150,25 +194,25 @@
             </div>
             <div class="contect-us">
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="contect-us-frame">
-                        <div class="contect-us-pic">
-                            <a href="#"><img src="../icon/mailcolor-final.png" alt=""></a>
+                    <div class="contect-us-frame" id="mail">
+                     <a href=" #mail-text "><div class="contect-us-pic">
+                            <img src="../icon/mailcolor-final.png">
                         </div>
                         <div class="contect-us-txt">
-                            <a href="#"><h3>電子信箱</h3></a>
+                            <h3>電子信箱</h3>
                             <p>請將您的寶貴意見以填寫表單方式送出<br>我們將於工作日由專人以郵件回覆您的問題</p>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="contect-us-frame">
-                        <div class="contect-us-pic">
-                            <a href="#"><img src="../icon/severice.png" alt=""></a>
+                    <div class="contect-us-frame" id="custom">
+                        <a href="#text-area"><div class="contect-us-pic">
+                            <img src="../icon/severice.png" alt="">
                         </div>
                         <div class="contect-us-txt">
-                            <a href="#"><h3>數位客服</h3></a>
+                            <h3>數位客服</h3>
                             <p>提供更加值且即時的服務，服務範圍包括營運相關問題諮詢及個人化服務申請與查詢</p>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4">
@@ -184,7 +228,47 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-12 col-lg-12 col-xl-6" id="mail-text">
+                    <div class="contect-us-frame">
+                        <input type="mail">
+                        <br>
+                        <textarea name="" id="" cols="40" rows="10">
+                        </textarea>
+                        <br>
+                        <input type="submit" value="送出" class="form-btn">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 col-xl-6" id="text-area">
+                    <div class="contect-us-frame">
+                        <div class="contect-us-pic">
+                            <br>
+                            <textarea name="" id="" cols="40" rows="10">
+                            </textarea>
+                            <br>
+                            <input type="submit" value="送出" class="form-btn">
+                        </div>
+                    </div>
+                </div>
             </div>
+            <script>
+                let mail = document.getElementById('mail');
+                let mailText= document.getElementById('mail-text');
+                let custom = document.getElementById('custom');
+                let textArea= document.getElementById('text-area');
+                function show(){
+                   mailText.style.display="block";
+                   textArea.style.display="none"; 
+                };
+                function show1(){
+                    mailText.style.display="none";
+                    textArea.style.display="block";
+                }
+                function init(){
+                    mail.onclick = show;
+                    custom.onclick= show1;
+                };
+                window.addEventListener('load',init,false)
+            </script>
         </div>
     </section>
     <section class="color">

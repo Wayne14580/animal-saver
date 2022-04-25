@@ -7,6 +7,12 @@
     <title>捐款</title>
     <link rel="stylesheet" href="../animal-saver.css">
     <style>
+          body,html{
+            scroll-behavior: smooth;
+        }
+        section{
+            margin: 0% 4.16% 4.16% 4.16%;;
+        }
         .donate-title h2{
             font-size: 30px;
         }
@@ -88,6 +94,9 @@
             transition: 1s;
             /* font-size: 15px; */
         }
+        #part2{
+            display: none;
+        }
 @media screen and (min-width:768px) {
     .col-md-1{ width: 8.333333%;}
     .col-md-2{ width: 16.666666%;}
@@ -164,11 +173,15 @@
         <nav class="main-nav">
             <ul class="main-ul">
                 <li class="main-list">
-                    <a href="../html/about-us.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">關於我們</a>
+                    <a href="../html/about-us.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        關於我們</a>
                 </li>
                 <li class="main-list">
-                    <a href="../html/animal-content.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">瀕危動物</a>
-                    <input type="checkbox" name="" id="animal-nav">
+                    <a href="../html/animal-content.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        瀕危動物</a>
+                    <!-- <input type="checkbox" name="" id="animal-nav">
                     <label for="animal-nav" class="hb2"></label>
                     <ul class="animal-ul">
                         <li class="animal-list"><a href="../html/animal-content-penguim.html">企鵝</a></li>
@@ -177,22 +190,28 @@
                         <li class="animal-list"><a href="../html/animal-content-bearcat.html">小熊貓屬</a></li>
                         <li class="animal-list"><a href="../html/animal-content-bluewhale.html">藍鯨</a></li>
                         <li class="animal-list"><a href="../html/animal-content-unknow.html">中華鱟</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="main-list chose">
-                    <a href="../html/donateus.html"><img src="../icon/6214716_elephant_evernote_logo_icon.png" alt="">捐 款</a>
+                    <a href="../html/donateus.html">
+                        <!-- <img src="../icon/6214716_elephant_evernote_logo_icon.png" alt=""> -->
+                        捐 款</a>
                 </li>
                 <li class="main-list">
-                    <a href="../html/selection.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">方案說明</a>
+                    <a href="../html/selection.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        方案說明</a>
                 </li>
                 <li class="main-list">
-                    <a href="../html/contect-us.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">聯絡我們</a>
+                    <a href="../html/contect-us.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        聯絡我們</a>
                 </li>
             </ul>
         </nav>
     </div>
     <section>
-        <div class="donate-title">
+        <div class="donate-title" id="top">
             <div class="title">
                 <h2>捐款</h2>
             </div>
@@ -212,7 +231,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6 col-xl-6">
-                    <form action="">
+                    <form action="" id="part1">
                         <h3>捐款選擇</h3>
                         <div class="part">
                             <div class="function">
@@ -295,9 +314,12 @@
                                     <p><input type="radio" name="payment">WebATM</p>
                                 </div>
                             </div>
-                        </div> 
-                        <br>
-                        <hr>
+                        </div>
+                        <div class="form-btn">
+                            <a href="#Top"><input type="button" value="下一步" id="button1"></a>
+                        </div>
+                    </form>
+                    <form action="" id="part2">
                         <h3>捐款資料</h3>
                         <div class="part">
                             <div class="function">
@@ -367,8 +389,23 @@
                             </div>
                         </div>
                         <div class="form-btn">
-                            <input type="submit" value="送出">
+                            <input type="submit" value="送出" id="button2">
                         </div>
+                        <script>
+                            let next = document.getElementById("button1");
+                            let finish = document.getElementById("button2");
+                            let page1 = document.getElementById("part1");
+                            let page2 = document.getElementById('part2');
+                            function nextPage(){
+                               part1.style.display='none';
+                               part2.style.display='block';
+                            }
+                            function init(){
+                                next.onclick = nextPage;
+                                finish.onclick = nextPage;
+                            }
+                            window.addEventListener('load',init,false)
+                        </script>
                     </form>
                 </div>
             </div>

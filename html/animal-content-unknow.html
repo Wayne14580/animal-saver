@@ -7,17 +7,24 @@
     <title>瀕危動物-中華鱟</title>
     <link rel="stylesheet" href="../animal-saver.css">
     <style>
+        .animal-content-inner{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .animals-img{
+            padding: 20px;
+        }
         .animals-img img{
             width: 100%;
             border-radius: 15px;
-            margin: 20px;
         }
         .animals-txt{
             vertical-align: bottom;
+            padding: 20px;
         }
         .animals-txt h2{
             text-align: center;
-            padding: 20px;
+            margin: 0px;
         }
         .animals-txt p{
             font-size: 18px;
@@ -29,73 +36,119 @@
         .animals-btn{
             margin-left: auto;
             margin-right: auto;
-        }
-        .animals-btn button{
-            width: 150px;
-            height: 60px;
-            background-color: #1a759f;
-            border: 3px solid #52b69a;
-            border-radius: 15px;
-            box-shadow: 3px 3px #34a0a4;
-            position: absolute;
-            right: 275px;
-            bottom: 0px;
+            text-align: center;
         }
         .animals-btn a{
             font-size: 30px;
             letter-spacing: 5px;
             text-decoration: none;
-        color: #b5e48c;
-        padding: 10px;
-        }
-        .animals-btn button:hover{
-            border: 5px solid #d9ed92;
-            box-shadow: 4px 4px #34a0a4;
-        transition: 1s;
+            color: #b5e48c;
+            padding: 10px;
+            background-color: #1a759f;
+            border: 3px solid #52b69a;
+            border-radius: 15px;
+            box-shadow: 3px 3px #34a0a4;
         }
         .animals-btn a:hover{
-            font-size: 32px;
+            font-size: 30px;
             color: #caf0f8;
             transition: 1s;
+            border: 4px solid #d9ed92;
+            box-shadow: 4px 4px #34a0a4;
+            transition: 1s;
+        }
+        .mapup{
+            position: relative;
         }
         .map-for-animal{
-            margin: 30px;
+            font-size: 0;
+            /* margin: 30px; */
         }
         .map-for-animal img{
             width:100%;
+            vertical-align: bottom;
+        }
+        .map-for-live{
+            position: absolute;
+            top: 0;
+        }
+        .map-for-live img{
+            width: 100%;
+            vertical-align: bottom;
+            opacity: 0.8;
+        }
+        .slider{
+            max-width: 1200px;
+        }
+        .animal-more{
+            position: relative;
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            box-sizing: border-box;
         }
         .animals-more-photos{
-            display: flex;
-            margin: 30px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 500%;
+            height: 100%;
+            transition: left 1s;
         }
-        .animals-more-photos img{
+        .animals-more-pics{
+            margin: 0;
+            width: 10%;
+            text-align: center;
+            float: left;
+        }
+        .animals-more-pics img{
             width: 100%;
-            border-radius: 15px;
+           vertical-align: top;
+        }
+        .slider-btn{
+            text-align: center;
+            padding: 10px;
+        }
+        #btnLeft{
+            background-color: #1a759f;
+            padding: 10px;
+            border-radius: 50px 0 0 50px ;
+            color: #b5e48c;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+        }
+        #btnRight{
+            background-color: #1a759f;
+            padding: 10px;
+            border-radius: 0 50px 50px 0;
+            color: #b5e48c;
+            position: absolute;
+            top: 50%;
+            right: 5%;
         }
         .animals-other{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
         }
-        .animals-other button{
-            border-radius: 50px;
-            border: 3px solid #52b69a;
-            box-shadow: 3px 3px #34a0a4;
+        .animal-a-other:hover{
             overflow: hidden;
-        }
-        .animals-other button:hover{
-            border-radius: 100%;
             border:  4px solid #d9ed92;
             box-shadow: 4px 4px #34a0a4;
-            transition: .5s;
+            border-radius: 100%;
         }
-        .animals-other img{
+        .animal-a-other img{
             width: 100%;
             border-radius: 50px;
+            transform: scale(1); 
+            vertical-align: bottom;
+            border: 3px solid #52b69a ;
+            box-shadow: 3px 3px #34a0a4;
         }
-        .animals-other img:hover{
-            width: 100%;
-            border-radius: 100%;
-            transform: scale(1.2);
+        .animal-a-other img:hover{
+            transform: scale(1.2); 
+            transition: .5s;
         }
         .animals-other p{
             font-size: 20px;
@@ -109,7 +162,7 @@
     <input type="checkbox" name="" id="menu-switch">
     <div class="main-header">
         <div class="logo">
-            <a href="../animal-saver- index.html"><img src="../img/logo3.png" alt="Animal Saver"></a>
+            <a href="../animal-saver-index.html"><img src="../img/LOG05.png" alt="Animal Saver"></a>
         </div>
         <label for="menu-switch" class="hb">
             <span></span>
@@ -119,11 +172,15 @@
         <nav class="main-nav">
             <ul class="main-ul">
                 <li class="main-list">
-                    <a href="../html/about-us.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">關於我們</a>
+                    <a href="../html/about-us.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        關於我們</a>
                 </li>
                 <li class="main-list chose">
-                    <a href="../html/animal-content.html"><img src="../icon/6214716_elephant_evernote_logo_icon.png" alt="">瀕危動物</a>
-                    <input type="checkbox" name="" id="animal-nav">
+                    <a href="../html/animal-content.html">
+                        <!-- <img src="../icon/6214716_elephant_evernote_logo_icon.png" alt=""> -->
+                        瀕危動物</a>
+                    <!-- <input type="checkbox" name="" id="animal-nav">
                     <label for="animal-nav" class="hb2"></label>
                     <ul class="animal-ul">
                         <li class="animal-list"><a href="../html/animal-content-penguim.html">企鵝</a></li>
@@ -132,101 +189,158 @@
                         <li class="animal-list"><a href="../html/animal-content-bearcat.html">小熊貓屬</a></li>
                         <li class="animal-list"><a href="../html/animal-content-bluewhale.html">藍鯨</a></li>
                         <li class="animal-list"><a href="../html/animal-content-unknow.html">中華鱟</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="main-list">
-                    <a href="../html/donateus.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">捐 款</a>
+                    <a href="../html/donateus.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        捐 款</a>
                 </li>
                 <li class="main-list">
-                    <a href="../html/selection.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">方案說明</a>
+                    <a href="../html/selection.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        方案說明</a>
                 </li>
                 <li class="main-list">
-                    <a href="../html/contect-us.html"><img src="../icon/elephant_evernote_logo_icon.png" alt="">聯絡我們</a>
+                    <a href="../html/contect-us.html">
+                        <!-- <img src="../icon/elephant_evernote_logo_icon.png" alt=""> -->
+                        聯絡我們</a>
                 </li>
             </ul>
         </nav>
     </div>
-    <h1>瀕危動物</h1>
+    <div class="title">
+        <h2>瀕危動物</h2>
+    </div>
     <section>
         <div class="container">
-            <div class="row-cols-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 about-us">
-                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 animal-content-inner">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="animals-img">
                         <img src="../img/unknow.jpg">
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="animals-txt">
-                        <h2>中華鱟</h2>
+                        <div class="title">
+                            <h2>中華鱟</h2>
+                        </div>
                         <p>中華鱟（學名：Tachypleus tridentatus），又名三棘鱟、小海鱟或東方鱟，是全世界4種鱟之一。中華鱟僅分布於太平洋西岸，自日本瀨戶內海開始，沿中國浙江、福建、廣東、廣西、海南、香港和台灣沿岸，直到印度尼西亞爪哇島北岸以北、蘇門答臘島印度洋東側海域。
-                        至2003年，中華鱟在日本瀨戶內海已幾乎滅絕。2006年中華鱟在日本被評估為極危，2007年在越南被評為易危。2019年在IUCN紅色名錄被評估為瀕危 。威脅主要來自於生境破壞和過度捕撈。</p> 
+                        至2003年，中華鱟在日本瀨戶內海已幾乎滅絕。2006年中華鱟在日本被評估為極危，2007年在越南被評為易危。2019年在IUCN紅色名錄被評估為瀕危 。威脅主要來自於生境破壞和過度捕撈。
+                        </p> 
                     </div>
                     <div class="animals-btn">
-                        <button><a href="../html/donateus.html">捐款</a></button>
+                        <a href="../html/donateus.html">捐款</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <h2>分布地圖</h2>
-        <div class="map-for-animal">
-            <img src="../img/mapforredbear.jpg" alt="世界地圖">
+        <div class="title">
+            <h2>分布地圖</h2>
+        </div>
+        <div class="mapup">
+            <div class="map-for-animal">
+                <img src="../img/world-map-for-index.jpg" alt="世界地圖">
+            </div>
+            <div class="map-for-live">
+                <img src="../img/limulidae-live-map.png">
+            </div>
         </div>
     </section>
     <section>
-        <h2>照片</h2>
-        <div class="container">
+        <div class="title">
+            <h2>照片</h2>
+        </div>
+        <div class="animal-more">
             <div class="animals-more-photos">
-                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
-                    <div class="animals-more-pics">
-                        <a href="#"><img src="../img/bluewhale2.jpg" alt="藍鯨"></a>
-                    </div>
+                <div class="animals-more-pics">
+                    <img src="../img/redbear1.jpg">
                 </div>
-                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
-                    <div class="animals-more-pics">
-                        <a href="#"><img src="../img/bluewhale2.jpg" alt="藍鯨"></a>
-                    </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic01.jpg">
                 </div>
-                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
-                    <div class="animals-more-pics">
-                        <a href="#"><img src="../img/bluewhale2.jpg" alt="藍鯨"></a>
-                    </div>
+                <div class="animals-more-pics">
+                        <img src="../img/penguin-pic02.jpg">
+                </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic03.jpg">
+                </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic00.jpg">
+                </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic01.jpg">
+                </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic02.jpg">
+                </div>
+                <div class="animals-more-pics">
+                    <img src="../img/penguin-pic03.jpg">
                 </div>
             </div>
         </div>
+        <div id="shiftPanel" class="slider-btn">
+            <input type="button" id="btnLeft" value="<<" disabled>
+            <input type="button" id="btnRight" value=">>">
+        </div>
+        <script src="../javascript/slide.js">
+        </script>
     </section>
     <section>
-        <h2>其他動物</h2>
+        <div class="title">
+            <h2>其他動物</h2>
+        </div>
         <div class="container">
             <div class="animals-other">
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-6 col-md-2 col-lg-2 col-xl-2">
                     <div class="animals-other-option">
-                        <button><a href="../html/animal-content-penguim.html"><img src="../img/penguimmap.jpg" alt="企鵝"></a></button>
+                        <a href="../html/animal-content-penguim.html">
+                        <div class="animal-a-other">
+                            <img src="../img/penguimmap.jpg" alt="企鵝">
+                        </div>
+                        </a>
                         <p>企鵝</p>
                     </div>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-6 col-md-2 col-lg-2 col-xl-2">
                     <div class="animals-other-option">
-                        <button><a href="../html/animal-content-northbear.html"><img src="../img/bearmap.jpg" alt="北極熊"></a></button>
+                        <a href="../html/animal-content-northbear.html">
+                            <div class="animal-a-other">
+                                <img src="../img/bearmap.jpg" alt="北極熊">
+                            </div>
+                        </a>
                         <p>北極熊</p>
                     </div>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-6 col-md-2 col-lg-2 col-xl-2">
                     <div class="animals-other-option">
-                        <button><a href="../html/animal-content-rhino.html"><img src="../img/rhinomap.jpg" alt="白犀牛"></a></button>
+                        <a href="../html/animal-content-rhino.html">
+                            <div class="animal-a-other">
+                                <img src="../img/rhinomap.jpg" alt="白犀牛">
+                            </div>
+                        </a>
                         <p>白犀牛</p>
                     </div>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-6 col-md-2 col-lg-2 col-xl-2">
                     <div class="animals-other-option">
-                        <button><a href="../html/animal-content-bearcat.html"><img src="../img/bearcatmap.jpg" alt="小熊貓屬"></a></button>
+                        <a href="../html/animal-content-bearcat.html">
+                        <div class="animal-a-other">
+                            <img src="../img/bearcatmap.jpg" alt="小熊貓屬">
+                        </div>
+                        </a>
                         <p>小熊貓屬</p>
                     </div>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-6 col-md-2 col-lg-2 col-xl-2">
                     <div class="animals-other-option">
-                        <button><a href="../html/animal-content-bluewhale.html"><img src="../img/whalemap.jpg" alt="藍鯨"></a></button>
+                        <a href="../html/animal-content-bluewhale.html">
+                            <div class="animal-a-other">
+                                <img src="../img/whalemap.jpg" alt="藍鯨">
+                            </div>
+                        </a>
                         <p>藍鯨</p>
                     </div>
                 </div>
@@ -234,14 +348,14 @@
         </div>
     </section>
     <section class="color">
-        <div class="container">
-            <div class="footer">
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+        <div class="containerr">
+            <div class="row-12 footer">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="footer-logo">
-                           <a href="../animal-saver- index.html"><img src="../img/logo3.png" alt=""></a>
+                           <a href="../animal-saver-index.html"><img src="../img/logo3.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="footer-path">
                         <h3>Animal Saver</h3>
                         <a href="../html/about-us.html">關於我們</a>
@@ -251,18 +365,18 @@
                         <a href="../html/contect-us.html">聯絡我們</a>
                     </div>
                 </div>
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3 ">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 ">
                     <div class="footer-us-fb">
                             <h3>關注我們</h3>
                             <div class="footer-us-fb-pic">
-                            <a href="#"><img src="../icon/facebook-icon.png"></a>
-                            <a href="#"><img src="../icon/ig-icon.png"></a>
-                            <a href="#"><img src="../icon/youtube-icon.png"></a>
-                            <a href="#"><img src="../icon/twitter-icon.png"></a>
+                            <a href="#"><img src="../icon/facebook-color.png"></a>
+                            <a href="#"><img src="../icon/instagram-color.png"></a>
+                            <a href="#"><img src="../icon/youtube-color.png"></a>
+                            <a href="#"><img src="../icon/twitter-color.png"></a>
                             </div>
                     </div>
                 </div>
-                <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="footer-btn">
                         <button>語言選擇</button>
                     </div>
