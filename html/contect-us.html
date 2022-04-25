@@ -222,7 +222,7 @@
                         </div>
                         <div class="contect-us-txt">
                             <a href="#"><h3>客服專線</h3></a>
-                            <p>4066-3000</p>
+                            <p>4123-3000</p>
                             <p>服務時間: 06:00~24:00</p>
                             <p> 以上皆為付費電話，依一般市話及行動電話費率標準計費</p>
                         </div>
@@ -250,24 +250,7 @@
                     </div>
                 </div>
             </div>
-            <script>
-                let mail = document.getElementById('mail');
-                let mailText= document.getElementById('mail-text');
-                let custom = document.getElementById('custom');
-                let textArea= document.getElementById('text-area');
-                function show(){
-                   mailText.style.display="block";
-                   textArea.style.display="none"; 
-                };
-                function show1(){
-                    mailText.style.display="none";
-                    textArea.style.display="block";
-                }
-                function init(){
-                    mail.onclick = show;
-                    custom.onclick= show1;
-                };
-                window.addEventListener('load',init,false)
+            <script src="../javascript/mail.js">     
             </script>
         </div>
     </section>

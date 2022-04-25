@@ -268,9 +268,9 @@
                                 </div>
                                 <div class="func">
                                     <p>自由方案</p>
-                                    <p><input type="radio" name="number" value=""><input type="text">元</p>
+                                    <p><input type="radio" name="number" value=""><input type="text" id="choice">元</p>
                                     <label for="gifttype">好禮六選一:</label>
-                                    <select name="gifttype" id="">
+                                    <select name="gifttype" id="item">
                                         <option value="gift">選擇</option>
                                         <option value="gift">典雅咖啡杯白色</option>
                                         <option value="gift">典雅咖啡杯薰衣草色</option>
@@ -279,6 +279,20 @@
                                         <option value="gift">潮流行李箱粉色</option>
                                         <option value="gift">潮流行李箱綠色</option>
                                     </select>
+                                    <!-- <script>
+                                        let value = document.getElementById('choice').innerText
+                                        let gift = document.getElementById('itme')
+                                        function check(){
+                                            console.log(value)
+                                            if(value <= 3000){
+                                                gift.disabled == false;
+                                            }
+                                        }
+                                        function init(){
+                                            gift.onblur = check;
+                                        }
+                                        window.addEventListener('load',init.false)
+                                    </script> -->
                                 </div>
                             </div>
                             <div class="function">
